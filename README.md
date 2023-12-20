@@ -1,5 +1,10 @@
 # SVA-DesignMedia-Spring-2024
 
+::: warn
+This syllabus is under active development! Things will change!
+
+:::
+
 # **Course Overview**
 
 This course aims to provide an in-depth understanding of Extended Reality (XR) and spatial computing for immersive media. From exploring historical milestones to understanding contemporary applications, students will gain hands-on experience and learn to translate their artistic voice into the spatial context of immersive media. The course is suitable for beginners with minimal experience in XR/AR/VR coding, and for those looking to expand their knowledge.
@@ -35,6 +40,7 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
 - **Workshop:** Introduction to spatial computing and immersive media.
 - **Workshop:** Basic project setup in Godot 4.
+- Homework - Reflection: What does XR mean to you?
 
 #### *Week 2: Foundations of Spatial Computing*
 
@@ -46,7 +52,11 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Lecture:** Principles of human-centered design.
 - **Workshop:** Design thinking workshop: Ideating for XR.
 
-#### *Week 4*
+#### *Week 4: Narrative and Storytelling in XR*
+
+- **Theme:** Storytelling and narrative techniques in XR.
+- **Lecture:** Crafting compelling narratives in XR spaces.
+- **Workshop:** Implementing storytelling elements in Godot 4 projects.
 
 ## Part 2: Patterns
 
@@ -76,18 +86,11 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
 - **Workshop:** WebXR, Save Data and APIs
 
-### **Weeks 7-8: Narrative and Storytelling in XR**
-
-- **Theme:** Storytelling and narrative techniques in XR.
-- **Lecture:** Crafting compelling narratives in XR spaces.
-- **Workshop:** Implementing storytelling elements in Godot 4 projects.
-
 ## Part 3: Visions
 
-### *Week 9:* 
+### *Week 9: Looking Back and Forwards*
 
-- **Lecture:** Artistic expression in the spatial context.
-- **Workshop:** Creating immersive experiences reflecting personal style.
+- Reflection on patterns and imagining new ones.
 
 ### *Week 10: Future of XR and Spatial Computing*
 
@@ -101,21 +104,20 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 ### *Week 12: Presentations*
 
-- **Lecture:** Trends and future developments in XR.
-- **Workshop:** Discussion on the potential of spatial computing.
+- Vision Presentations
 
 ## Part 4: Applications
 
-### **Weeks 13-14: Advanced Design Patterns and Integration**
+### *Weeks 13-14: Advanced Design Patterns and Integration*
 
 - **Theme:** Advanced design patterns and their integration.
 - **Lecture:** Exploring complex design patterns in XR.
 - **Workshop:** Integrating advanced patterns using Godot 4 and secondary tools.
 
-### **Weeks 15-16: Capstone Project and Thematic Presentations**
+### *Weeks 15-16: Capstone Project Development and Presentation*
 
-- **Project Development:** Finalizing thematic XR projects.
-- **Final Presentation:** Showcasing capstone projects and thematic learnings.
+- **Project Development:** Finalizing XR projects.
+- **Final Presentation:** Showcasing capstone projects
 
 # **Assessment**
 
