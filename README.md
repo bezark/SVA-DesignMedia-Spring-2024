@@ -1,80 +1,130 @@
 # SVA-DesignMedia-Spring-2024
 
-# **Introduction to XR and Spatial Computing**
-
-## **Course Description**
+# **Course Overview**
 
 This course aims to provide an in-depth understanding of Extended Reality (XR) and spatial computing for immersive media. From exploring historical milestones to understanding contemporary applications, students will gain hands-on experience and learn to translate their artistic voice into the spatial context of immersive media. The course is suitable for beginners with minimal experience in XR/AR/VR coding, and for those looking to expand their knowledge.
 
-## **Prerequisites**
+# **Prerequisites**
 
-* Open to senior advertising and design majors only.
-* No prior coding knowledge is required.
+- **Audience:** Senior advertising and design majors.
+- **Experience Requirements:** No prior coding knowledge is required.
 
-## **Learning Objectives**
+# **Learning Outcomes**
 
 By the end of this course, students will be able to:
+
 - Understand the evolution and fundamentals of XR and spatial computing.
+- Gain hands-on experience in Godot 4, applying these design patterns to real-world scenarios.
 - Apply human-centered design principles in the creation of XR applications.
 - Develop applications and prototypes across mixed-reality spectrum.
 - Translate artistic voice and style into immersive media applications.
-- Gain basic proficiency in HTML, CSS, and JavaScript.
 
-## **Course Structure**
+# **Course Structure**
 
-### **Week 1: Introduction to XR**
+This course is broken up into four major parts, with each part lasting roughly 4 weeks. The sections are:
+
+- Foundations
+- Patterns
+- Visions
+- Applications
+
+## Part 1: Foundations
+
+### *Week 1: Introduction to XR*
+
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
 - **Workshop:** Introduction to spatial computing and immersive media.
+- **Workshop:** Basic project setup in Godot 4.
 
-### **Week 2: Foundations of Spatial Computing**
+#### *Week 2: Foundations of Spatial Computing*
+
 - **Lecture:** Technologies enabling XR: Hardware and Software.
-- **Workshop:** Hands-on experience with basic XR tools.
+- **Workshop:** Hands-on experience with basic XR tools. Introduction to Godot 4.
 
-### **Week 3: Human-Centered Design in XR**
+#### *Week 3: Human-Centered Design in XR*
+
 - **Lecture:** Principles of human-centered design.
 - **Workshop:** Design thinking workshop: Ideating for XR.
 
-### **Week 4: Introduction to Coding for XR**
-- **Lecture:** Basics of HTML, CSS, and JavaScript for XR.
-- **Workshop:** Creating a basic interactive XR application.
+#### *Week 4*
 
-### **Week 5: Design Patterns in Spatial Computing**
-- **Lecture:** Exploring design patterns in spatial computing.
-- **Workshop:** Developing AR filters and VR interfaces.
+## Part 2: Patterns
 
-### **Week 6: Social VR and Personal Branding**
-- **Lecture:** Social VR Avatars and online presence.
-- **Workshop:** Building your personal VR portfolio showcase.
+In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
-### **Week 7: Translating Artistic Voice into XR**
+#### *Week 5: Immersion & Environment*
+
+- **Theme:** Creating immersive XR environments.
+- **Lecture:** Principles of immersive design and world-building in XR.
+- **Workshop:** Designing immersive environments with Blender and  Godot 4.
+
+#### *Week 6: Feedback & Interaction*
+
+- **Theme:** Designing interactive elements for user engagement.
+- **Lecture:** Best practices in interactivity for XR.
+- **Workshop:** Developing interactive features in Godot 4.
+
+#### *Week 7: Accessibility & Interface*
+
+- **Theme:** UI/UX design in XR.
+- **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
+- **Workshop:** Building UI/UX components in Godot 4.
+
+#### *Week 8: Extension and Context*
+
+- **Theme:** AR, Context awareness and history
+- **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
+- **Workshop:** WebXR, Save Data and APIs
+
+### **Weeks 7-8: Narrative and Storytelling in XR**
+
+- **Theme:** Storytelling and narrative techniques in XR.
+- **Lecture:** Crafting compelling narratives in XR spaces.
+- **Workshop:** Implementing storytelling elements in Godot 4 projects.
+
+## Part 3: Visions
+
+### *Week 9:* 
+
 - **Lecture:** Artistic expression in the spatial context.
 - **Workshop:** Creating immersive experiences reflecting personal style.
 
-### **Week 8: Future of XR and Spatial Computing**
+### *Week 10: Future of XR and Spatial Computing*
+
 - **Lecture:** Trends and future developments in XR.
 - **Workshop:** Discussion on the potential of spatial computing.
 
-### **Week 9: Capstone Project**
-- **Guided Session:** Development and fine-tuning of personal XR projects.
-- **Presentation:** Showcase of personal XR projects.
+### *Week 11: Translating Artistic Voice into XR*
 
-### **Week 10: Course Review and Reflection**
-- **Discussion:** Reflecting on learnings and experiences.
-- **Feedback Session:** Course feedback and improvements.
+- **Lecture:** Artistic expression in the spatial context.
+- **Workshop:** Creating immersive experiences reflecting personal style.
 
-## **Assessment**
+### *Week 12: Presentations*
 
-- **Hands-On Workshops:** 40%
+- **Lecture:** Trends and future developments in XR.
+- **Workshop:** Discussion on the potential of spatial computing.
+
+## Part 4: Applications
+
+### **Weeks 13-14: Advanced Design Patterns and Integration**
+
+- **Theme:** Advanced design patterns and their integration.
+- **Lecture:** Exploring complex design patterns in XR.
+- **Workshop:** Integrating advanced patterns using Godot 4 and secondary tools.
+
+### **Weeks 15-16: Capstone Project and Thematic Presentations**
+
+- **Project Development:** Finalizing thematic XR projects.
+- **Final Presentation:** Showcasing capstone projects and thematic learnings.
+
+# **Assessment**
+
+- **Class Participation:** 20%
+- **Reflections:** 20%
+- **Pattern Exploration:** 20%
+- **Vision Presentation:** 30%
 - **Capstone Project:** 30%
-- **Participation:** 20%
-- **Homework Assignments:** 10%
 
-## **Materials and Resources**
+# **Resources**
 
-All required materials and resources will be provided or shared during the course.
-
-## **Contact Information**
-
-[Instructor Name and Contact Information]
-
- 
+## **Instructor Details**
