@@ -1,9 +1,6 @@
 # SVA-DesignMedia-Spring-2024
 
-::: warn
-This syllabus is under active development! Things will change!
-
-:::
+> ⚠️ This syllabus is under active development! Things will change!
 
 # **Course Overview**
 
