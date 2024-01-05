@@ -141,8 +141,12 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 ## **Instructor Details**
 
-**John Bezark**
 
+John Bezark (he/they) is a Brooklyn based Game Designer, Creative Technologist, Immersive Experience Designer and Video Artist. They graduated from NYU’s ITP with an MPS in Interactive Telecommunications and  from Fordham University with a BA in Theatrical Directing. John has made everything from Solar Powered Websites to Immersive Game-shows about Systems Thinking. 
+
+Nowadays they like to use the Godot Game Engine to create one of a kind immersive and interactive experiences, games and performance art.
+
+ When not creating weird things, John also really likes to work in education and he’s passionate about teaching others how to design immersive spaces, how to make games and how to see the world through the lens of Systems Thinking. 
 **Email: jbezark@sva.edu**
 
 [Portfolio](https://johnbezark.info/)
