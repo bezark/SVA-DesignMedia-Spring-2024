@@ -126,4 +126,21 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 # **Resources**
 
+### Godot
+
+- [Download](https://godotengine.org/)
+- [Source Code](https://github.com/godotengine/godot)
+- [Docs](https://docs.godotengine.org/en/stable/)
+- [Demo Projects](https://github.com/godotengine/godot-demo-projects)
+- [Forums](https://forum.godotengine.org/)
+- 
+
+  ---
+
 ## **Instructor Details**
+
+**John Bezark**
+
+**Email: jbezark@sva.edu**
+
+[Portfolio](https://johnbezark.info/)
