@@ -58,7 +58,7 @@ This course is broken up into four major parts, with each part lasting roughly 4
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
-- [Design Patterns](Design Patterns.md)
+- (Design Patterns)[Design Patterns.md]
 
 #### *Week 5: Immersion & Environment*
 
