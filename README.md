@@ -17,7 +17,11 @@ By the end of this course, students will be able to:
 
 - Understand the evolution and fundamentals of XR and spatial computing.
 - Gain hands-on experience in Godot 4, applying these design patterns to real-world scenarios.
-- Apply human-centered design principles in the creation of XR applications.
+
+  ::: error
+  Apply human-centered design principles in the creation of XR applications.
+
+  :::
 - Develop applications and prototypes across mixed-reality spectrum.
 - Translate artistic voice and style into immersive media applications.
 
@@ -87,33 +91,33 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 ## Part 3: Visions
 
-### *Week 9: Looking Back and Forwards*
+#### *Week 9: Looking Back and Forwards*
 
 - Reflection on patterns and imagining new ones.
 
-### *Week 10: Future of XR and Spatial Computing*
+#### *Week 10: Future of XR and Spatial Computing*
 
 - **Lecture:** Trends and future developments in XR.
 - **Workshop:** Discussion on the potential of spatial computing.
 
-### *Week 11: Translating Artistic Voice into XR*
+#### *Week 11: Translating Artistic Voice into XR*
 
 - **Lecture:** Artistic expression in the spatial context.
 - **Workshop:** Creating immersive experiences reflecting personal style.
 
-### *Week 12: Presentations*
+#### *Week 12: Presentations*
 
 - Vision Presentations
 
 ## Part 4: Applications
 
-### *Weeks 13-14: Advanced Design Patterns and Integration*
+#### *Weeks 13-14: Advanced Design Patterns and Integration*
 
 - **Theme:** Advanced design patterns and their integration.
 - **Lecture:** Exploring complex design patterns in XR.
 - **Workshop:** Integrating advanced patterns using Godot 4 and secondary tools.
 
-### *Weeks 15-16: Capstone Project Development and Presentation*
+#### *Weeks 15-16: Capstone Project Development and Presentation*
 
 - **Project Development:** Finalizing XR projects.
 - **Final Presentation:** Showcasing capstone projects
@@ -122,8 +126,21 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 - **Class Participation:** 20%
 - **Reflections:** 20%
+  - 4 Short Reflections on prompts. Each one is worth 5%.
 - **Pattern Exploration:** 20%
+
+  ::: warn
+  Flesh out
+
+  :::
 - **Vision Presentation:** 30%
+
+  ::: warn
+  Flesh out
+
+  :::
+
+
 - **Capstone Project:** 30%
 
 # **Resources**
@@ -135,18 +152,21 @@ In this section, lectures and workshops focus on understanding and implementing 
 - [Docs](https://docs.godotengine.org/en/stable/)
 - [Demo Projects](https://github.com/godotengine/godot-demo-projects)
 - [Forums](https://forum.godotengine.org/)
-- 
+
+::: warn
+Add more resources
+
+:::
 
 ---
 
 ## **Instructor Details**
 
-
-John Bezark (he/they) is a Brooklyn based Game Designer, Creative Technologist, Immersive Experience Designer and Video Artist. They graduated from NYU’s ITP with an MPS in Interactive Telecommunications and  from Fordham University with a BA in Theatrical Directing. John has made everything from Solar Powered Websites to Immersive Game-shows about Systems Thinking. 
+John Bezark (he/they) is a Brooklyn based Game Designer, Creative Technologist, Immersive Experience Designer and Video Artist. They graduated from NYU’s ITP with an MPS in Interactive Telecommunications and  from Fordham University with a BA in Theatrical Directing. John has made everything from Solar Powered Websites to Immersive Game-shows about Systems Thinking.
 
 Nowadays they like to use the Godot Game Engine to create one of a kind immersive and interactive experiences, games and performance art.
 
- When not creating weird things, John also really likes to work in education and he’s passionate about teaching others how to design immersive spaces, how to make games and how to see the world through the lens of Systems Thinking. 
+When not creating weird things, John also really likes to work in education and he’s passionate about teaching others how to design immersive spaces, how to make games and how to see the world through the lens of Systems Thinking.
 **Email: jbezark@sva.edu**
 
 [Portfolio](https://johnbezark.info/)
