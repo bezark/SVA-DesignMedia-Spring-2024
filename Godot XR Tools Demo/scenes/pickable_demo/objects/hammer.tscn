@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://de0guxhrn5ouk"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1"]
+[ext_resource type="Material" path="res://assets/wahooney.itch.io/brown_grid_triplanar.tres" id="2"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="2_2myoy"]
+[ext_resource type="Material" path="res://assets/wahooney.itch.io/blue_grid.tres" id="3"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="3_3xwvb"]
+[ext_resource type="Resource" uid="uid://dd4sqdg8upblx" path="res://scenes/pickable_demo/poses/pose_hammer_left.tres" id="3_p8dbs"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="4"]
+[ext_resource type="Resource" uid="uid://c7lps5l5dj652" path="res://scenes/pickable_demo/poses/pose_hammer_right.tres" id="5_tuke4"]
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(0.1, 0.1, 0.2)
+
+[sub_resource type="CylinderShape3D" id="3"]
+height = 0.6
+radius = 0.02
+
+[sub_resource type="CylinderMesh" id="2"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 0.6
+radial_segments = 8
+rings = 0
+
+[sub_resource type="BoxMesh" id="4"]
+size = Vector3(0.1, 0.1, 0.2)
+
+[node name="Hammer" instance=ExtResource("1")]
+collision_mask = 7
+ranged_grab_method = 0
+second_hand_grab = 2
+
+[node name="GrabPointBaseLeft" parent="." index="0" instance=ExtResource("2_2myoy")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.58166e-08, -0.981627, 0.190809, 1.66811e-08, 0.190809, 0.981627, -0.007, 0.355, -0.071)
+mode = 1
+hand_pose = ExtResource("3_p8dbs")
+
+[node name="GrabPointBaseRight" parent="." index="1" instance=ExtResource("3_3xwvb")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.58166e-08, -0.981627, 0.190809, 1.66811e-08, 0.190809, 0.981627, 0.007, 0.355, -0.071)
+mode = 1
+hand_pose = ExtResource("5_tuke4")
+
+[node name="GrabPointTopLeft" parent="." index="2" instance=ExtResource("2_2myoy")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.58166e-08, -0.981627, 0.190809, 1.66811e-08, 0.190809, 0.981627, -0.007, 0.055, -0.071)
+mode = 2
+hand_pose = ExtResource("3_p8dbs")
+drive_position = 0.1
+drive_angle = 0.0
+drive_aim = 1.0
+
+[node name="GrabPointTopRight" parent="." index="3" instance=ExtResource("3_3xwvb")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.58166e-08, -0.981627, 0.190809, 1.66811e-08, 0.190809, 0.981627, 0.007, 0.055, -0.071)
+mode = 2
+hand_pose = ExtResource("5_tuke4")
+drive_position = 0.1
+drive_angle = 0.0
+drive_aim = 1.0
+
+[node name="CollisionShape3D" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+shape = SubResource("1")
+
+[node name="CollisionShape2" type="CollisionShape3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("3")
+
+[node name="Handle" type="MeshInstance3D" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+mesh = SubResource("2")
+surface_material_override/0 = ExtResource("2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+mesh = SubResource("4")
+surface_material_override/0 = ExtResource("3")
+
+[node name="HighlightRing" parent="." index="8" instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)

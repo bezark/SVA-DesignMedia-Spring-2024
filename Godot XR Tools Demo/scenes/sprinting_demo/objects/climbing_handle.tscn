@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfjkswl3pu87m"]
+
+[ext_resource type="Material" path="res://assets/wahooney.itch.io/blue_grid.tres" id="1"]
+[ext_resource type="PackedScene" uid="uid://cjyilbm4ucc7s" path="res://addons/godot-xr-tools/objects/climbable.tscn" id="1_4eqd4"]
+
+[sub_resource type="BoxMesh" id="1"]
+material = ExtResource("1")
+size = Vector3(0.1, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(0.1, 0.5, 0.5)
+
+[node name="ClimbingHandle" type="Node3D"]
+
+[node name="Climbable" parent="." instance=ExtResource("1_4eqd4")]
+
+[node name="MeshInstance" type="MeshInstance3D" parent="Climbable"]
+mesh = SubResource("1")
+skeleton = NodePath("")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="Climbable"]
+shape = SubResource("2")
