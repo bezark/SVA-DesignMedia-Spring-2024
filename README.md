@@ -155,12 +155,14 @@ In this section, lectures and workshops focus on understanding and implementing 
 - [Docs](https://docs.godotengine.org/en/stable/)
 - [Demo Projects](https://github.com/godotengine/godot-demo-projects)
 - [Forums](https://forum.godotengine.org/)
+- [Godot Discord](https://discord.com/invite/zH7NUgz)
 
 ### Godot Videos
 
-[Lukky](https://www.youtube.com/@lukky)
-
-- [All 219 Nodes](https://www.youtube.com/watch?v=tO2gthp45MA)
+- [Gwizz](https://www.youtube.com/@Gwizz1027)
+- [Lukky](https://www.youtube.com/@lukky)
+  - [All 219 Nodes](https://www.youtube.com/watch?v=tO2gthp45MA)
+- [Godotneers](https://www.youtube.com/@godotneers)
 
 #### Godot XR
 
