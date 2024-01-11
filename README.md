@@ -1,6 +1,6 @@
 # SVA-DesignMedia-Spring-2024
 
-> ⚠️ This syllabus is under active development! Things will change!
+[**OFFICIAL SYLLABUS FOUND HERE**](https://sva.simplesyllabus.com/api2/doc-pdf/vk8sqtdsw/Spring-2024-UG%2FGR-DSD-4716-B-DESIGN-MEDIA.pdf?locale=en-US)
 
 # **Course Overview**
 
@@ -17,11 +17,7 @@ By the end of this course, students will be able to:
 
 - Understand the evolution and fundamentals of XR and spatial computing.
 - Gain hands-on experience in Godot 4, applying these design patterns to real-world scenarios.
-
-  ::: error
-  Apply human-centered design principles in the creation of XR applications.
-
-  :::
+- Apply human-centered design principles in the creation of XR applications.
 - Develop applications and prototypes across mixed-reality spectrum.
 - Translate artistic voice and style into immersive media applications.
 
@@ -36,24 +32,34 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 ## Part 1: Foundations
 
-### *Week 1: Introduction to XR*
+### *Class 1 1/16: Introduction to XR*
 
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
-- **Workshop:** Introduction to spatial computing and immersive media.
-- **Workshop:** Basic project setup in Godot 4.
-- Homework - Reflection: What does XR mean to you?
+- **Workshop:** Introduction to spatial computing and immersive media. Basic project setup in Godot 4.
+- Assignment - Reflection 1: What does XR mean to you?
 
-#### *Week 2: Foundations of Spatial Computing*
+### **__NO CLASS 1/23__**
+
+- **DUE:** 
+  - **Reflection 1 What does XR mean to you?**
+  - **Watch and respond to Ready Player 1**
+- **Homework**: Watch Introduction to Godot Recording and complete Lab 1
+
+#### *Class 2 1/30: Foundations of Spatial Computing*
 
 - **Lecture:** Technologies enabling XR: Hardware and Software.
 - **Workshop:** Hands-on experience with basic XR tools. Introduction to Godot 4.
+- **DUE: Lab 1**
+- **Homework: Reflection 2 - write 3 250 word responses to other students work**
 
-#### *Week 3: Human-Centered Design in XR*
+#### *Class 3 2/6: Human-Centered Design in XR*
 
 - **Lecture:** Principles of human-centered design.
 - **Workshop:** Design thinking workshop: Ideating for XR.
+- **DUE: Reflection 2**
+- **Homework: Lab 2**
 
-#### *Week 4: Narrative and Storytelling in XR*
+#### *Class 4 2/13: Narrative and Storytelling in XR*
 
 - **Theme:** Storytelling and narrative techniques in XR.
 - **Lecture:** Crafting compelling narratives in XR spaces.
@@ -63,83 +69,68 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
-- (Design Patterns)[Design Patterns.md]
-
-#### *Week 5: Immersion & Environment*
+#### *Class 5 2/20: Immersion & Environment*
 
 - **Theme:** Creating immersive XR environments.
 - **Lecture:** Principles of immersive design and world-building in XR.
 - **Workshop:** Designing immersive environments with Blender and  Godot 4.
 
-#### *Week 6: Feedback & Interaction*
+#### *Class 6 2/27: Feedback & Interaction*
 
 - **Theme:** Designing interactive elements for user engagement.
 - **Lecture:** Best practices in interactivity for XR.
 - **Workshop:** Developing interactive features in Godot 4.
 
-#### *Week 7: Accessibility & Interface*
+#### *Class 7 3/12: Accessibility & Interface*
 
 - **Theme:** UI/UX design in XR.
 - **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
 - **Workshop:** Building UI/UX components in Godot 4.
 
-#### *Week 8: Extension and Context*
+#### *Class 8 3/19: Extension and Context*
 
 - **Theme:** AR, Context awareness and history
-- **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
+- **Lecture:** History, Geography, Continuity
 - **Workshop:** WebXR, Save Data and APIs
+- **DUE: Pattern Explorations**
 
 ## Part 3: Visions
 
-#### *Week 9: Looking Back and Forwards*
+#### *Class 9 3/26: Looking Back and Forwards*
 
+- **Remote Class**
 - Reflection on patterns and imagining new ones.
 
-#### *Week 10: Future of XR and Spatial Computing*
 
 - **Lecture:** Trends and future developments in XR.
 - **Workshop:** Discussion on the potential of spatial computing.
 
-#### *Week 11: Translating Artistic Voice into XR*
-
-- **Lecture:** Artistic expression in the spatial context.
-- **Workshop:** Creating immersive experiences reflecting personal style.
-
-#### *Week 12: Presentations*
+#### *Class 10 4/2: Presentations*
 
 - Vision Presentations
 
 ## Part 4: Applications
 
-#### *Weeks 13-14: Advanced Design Patterns and Integration*
-
-- **Theme:** Advanced design patterns and their integration.
-- **Lecture:** Exploring complex design patterns in XR.
-- **Workshop:** Integrating advanced patterns using Godot 4 and secondary tools.
-
-#### *Weeks 15-16: Capstone Project Development and Presentation*
+#### *Class 11-12: Capstone Project Development and Presentation*
 
 - **Project Development:** Finalizing XR projects.
 - **Final Presentation:** Showcasing capstone projects
 
+#### *Class 13&14 4/23: Presentations and Wrap Up*
+
+- **DUE:** Capstone Project
+
 # **Assessment**
 
-- **Class Participation:** 20%
-- **Reflections:** 20%
-  - 4 Short Reflections on prompts. Each one is worth 5%.
+- **Class Participation:** 15%
+- **Reflections:** 12%
+  - 3 Short Reflections on prompts. Each one is worth 4%.
+- **Labs:** 12%
+  - 3 coding assignments intended to build skills, each worth 4%.
 - **Pattern Exploration:** 20%
-
-  ::: warn
-  Flesh out
-
-  :::
-- **Vision Presentation:** 30%
-
-  ::: warn
-  Flesh out
-
-  :::
-- **Capstone Project:** 30%
+  - Mid-semester project. A prototype that explores an XR design pattern in depth.
+- **Vision Presentation:** 16%
+- **Capstone Project:** 25%
 
 # **Resources**
 
@@ -176,11 +167,6 @@ In this section, lectures and workshops focus on understanding and implementing 
 ## Git & Github
 
 - [Dan Shiffman's Github for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY)
-
-::: warn
-Add more resources
-
-:::
 
 ---
 
