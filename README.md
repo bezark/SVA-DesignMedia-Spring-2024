@@ -40,7 +40,7 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 ### **__NO CLASS 1/23__**
 
-- **DUE:** 
+- **DUE:**
   - **Reflection 1 What does XR mean to you?**
   - **Watch and respond to Ready Player 1**
 - **Homework**: Watch Introduction to Godot Recording and complete Lab 1
@@ -178,5 +178,7 @@ Nowadays they like to use the Godot Game Engine to create one of a kind immersiv
 
 When not creating weird things, John also really likes to work in education and he’s passionate about teaching others how to design immersive spaces, how to make games and how to see the world through the lens of Systems Thinking.
 **Email: jbezark@sva.edu**
-
 [Portfolio](https://johnbezark.info/)
+
+### Office Hours
+Thursday Mornings 10-12:30pm room 215 or by appointment.
