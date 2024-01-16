@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://cpiqixjt86t5b"]
+[gd_scene load_steps=15 format=3 uid="uid://cpiqixjt86t5b"]
 
 [ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://player.tscn" id="1_s4oth"]
 [ext_resource type="Texture2D" uid="uid://dkyygu1qcleqv" path="res://Textures/Dirt/Dirt_06-256x256.png" id="2_47yt2"]
 [ext_resource type="Texture2D" uid="uid://byd1cxvsghqli" path="res://Textures/Tile/Tile_08-256x256.png" id="2_pm0g5"]
 [ext_resource type="Texture2D" uid="uid://dqui4vhnpmnr4" path="res://Textures/Plaster/Plaster_01-256x256.png" id="3_y0emd"]
+[ext_resource type="PackedScene" uid="uid://ctcpyrkhlyw12" path="res://simple_xr.tscn" id="5_xd346"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3nwo0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -121,3 +122,6 @@ shape = SubResource("SphereShape3D_0eais")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/Ball"]
 mesh = SubResource("SphereMesh_404uw")
+
+[node name="SimpleXR" parent="." instance=ExtResource("5_xd346")]
+visible = false
