@@ -1,6 +1,29 @@
 
 ### Class Outline for Week 1
 
+
+3:20 PM - 3:45 PM: Introduction and Welcome
+
+3:45 PM - 4:05 PM: Overview of the Course Syllabus
+
+4:10 PM - 4:40 PM: Lecture - Overview of XR, AR, and VR: Historical Milestones
+
+4:40 PM - 4:50 PM: Break
+
+4:50 PM - 5:25 PM: Workshop - Introduction to Spatial Computing and Immersive Media with Godot 4
+
+5:30 PM - 6:00 PM: Field Trip!
+
+6:00 PM - 6:10 PM: Assignment Introduction and Closing Remarks
+
+
+
+
+
+---
+
+
+
 **3:30 PM - 3:50 PM: Introduction and Welcome**
 - Brief self-introduction as the instructor.
 - Welcome students and encourage brief self-introductions to foster a sense of community.

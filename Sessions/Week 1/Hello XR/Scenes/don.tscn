@@ -1,0 +1,388 @@
+[gd_scene load_steps=19 format=3 uid="uid://bw45adbkfo6tp"]
+
+[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://player.tscn" id="1_umigd"]
+[ext_resource type="Texture2D" uid="uid://bolt815s8k1rd" path="res://Textures/Brick/Brick_01-256x256.png" id="2_ht5xc"]
+[ext_resource type="Texture2D" uid="uid://dkyygu1qcleqv" path="res://Textures/Dirt/Dirt_06-256x256.png" id="3_q3twk"]
+[ext_resource type="Texture2D" uid="uid://dqui4vhnpmnr4" path="res://Textures/Plaster/Plaster_01-256x256.png" id="4_d1dil"]
+[ext_resource type="Texture2D" uid="uid://cdltk66qub1wd" path="res://Textures/Brick/Brick_04-256x256.png" id="5_bm0h0"]
+[ext_resource type="Texture2D" uid="uid://byd1cxvsghqli" path="res://Textures/Tile/Tile_08-256x256.png" id="6_6eidm"]
+[ext_resource type="PackedScene" uid="uid://ctcpyrkhlyw12" path="res://simple_xr.tscn" id="7_47cwn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3nwo0"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_fvcjd"]
+sky_material = SubResource("ProceduralSkyMaterial_3nwo0")
+
+[sub_resource type="Environment" id="Environment_jdn65"]
+background_mode = 2
+sky = SubResource("Sky_fvcjd")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f4v62"]
+albedo_texture = ExtResource("2_ht5xc")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_831vq"]
+albedo_color = Color(0.45098, 0.345098, 0.180392, 1)
+albedo_texture = ExtResource("3_q3twk")
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwm3b"]
+albedo_color = Color(0.435294, 0.435294, 0.435294, 1)
+albedo_texture = ExtResource("4_d1dil")
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfds6"]
+albedo_color = Color(0.45098, 0.34902, 0.176471, 1)
+metallic = 1.0
+metallic_texture = ExtResource("5_bm0h0")
+uv1_triplanar = true
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d6ogm"]
+bounce = 0.9
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0eais"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bv1h"]
+albedo_color = Color(1, 0.172549, 0.239216, 1)
+albedo_texture = ExtResource("6_6eidm")
+uv1_triplanar = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_404uw"]
+material = SubResource("StandardMaterial3D_1bv1h")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jdn65")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.278148, -0.704031, -0.653432, 0.496072, -0.687821, 0.529919, -0.822524, -0.176754, 0.540566, -12.7721, 35.939, -8.29301)
+light_color = Color(0.839216, 0.682353, 1, 1)
+light_energy = 0.852
+light_indirect_energy = 0.0
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_umigd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0.102901)
+visible = false
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+material_override = SubResource("StandardMaterial3D_f4v62")
+use_collision = true
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_831vq")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.62713, -7)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3.62713, -7)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.62713, -11)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3.62713, -11)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.62713, -16)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3.62713, -16)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Level/CSGBox3D2"]
+transform = Transform3D(0.994053, 0, -0.108902, 0, 1, 0, 0.108902, 0, 0.994053, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, -0.993514, -0.113706, 0, 0.113706, -0.993514, 2.03604, 18.6564, -6.94996)
+inner_radius = 0.07
+outer_radius = 7.686
+material = SubResource("StandardMaterial3D_mfds6")
+
+[node name="Objects" type="Node3D" parent="."]
+
+[node name="Ball" type="RigidBody3D" parent="Objects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.23923, -3.13487)
+mass = 0.5
+physics_material_override = SubResource("PhysicsMaterial_d6ogm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Ball"]
+shape = SubResource("SphereShape3D_0eais")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/Ball"]
+mesh = SubResource("SphereMesh_404uw")
+
+[node name="SimpleXR" parent="." instance=ExtResource("7_47cwn")]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.973845, 0, -0.227212, 0, 1, 0, 0.227212, 0, 0.973845, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(-0.218722, 0, -0.975787, 0, 1, 0, 0.975787, 0, -0.218722, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3"]
+transform = Transform3D(0.390538, 0, -0.920587, 0, 1, 0, 0.920587, 0, 0.390538, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2/CSGBox3D3/CSGBox3D3/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30094, 4.88513, -3.36108)

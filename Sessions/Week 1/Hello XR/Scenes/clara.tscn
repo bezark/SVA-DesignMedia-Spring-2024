@@ -1,0 +1,150 @@
+[gd_scene load_steps=17 format=3 uid="uid://c0tbu8xdk3iba"]
+
+[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://player.tscn" id="1_5xfe7"]
+[ext_resource type="Texture2D" uid="uid://dkyygu1qcleqv" path="res://Textures/Dirt/Dirt_06-256x256.png" id="2_21057"]
+[ext_resource type="Texture2D" uid="uid://dqui4vhnpmnr4" path="res://Textures/Plaster/Plaster_01-256x256.png" id="3_dscf7"]
+[ext_resource type="Texture2D" uid="uid://byd1cxvsghqli" path="res://Textures/Tile/Tile_08-256x256.png" id="4_ma4k8"]
+[ext_resource type="PackedScene" uid="uid://ctcpyrkhlyw12" path="res://simple_xr.tscn" id="5_jonr4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3nwo0"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_fvcjd"]
+sky_material = SubResource("ProceduralSkyMaterial_3nwo0")
+
+[sub_resource type="Environment" id="Environment_jdn65"]
+background_mode = 2
+sky = SubResource("Sky_fvcjd")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_831vq"]
+albedo_color = Color(0.45098, 0.345098, 0.180392, 1)
+albedo_texture = ExtResource("2_21057")
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwm3b"]
+albedo_color = Color(0.435294, 0.435294, 0.435294, 1)
+albedo_texture = ExtResource("3_dscf7")
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cujqr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ul7fd"]
+render_priority = 1
+metallic = 1.0
+metallic_specular = 0.76
+roughness_texture = SubResource("CompressedTexture2D_cujqr")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d6ogm"]
+bounce = 0.9
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0eais"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bv1h"]
+albedo_color = Color(1, 0.172549, 0.239216, 1)
+albedo_texture = ExtResource("4_ma4k8")
+uv1_triplanar = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_404uw"]
+material = SubResource("StandardMaterial3D_1bv1h")
+
+[node name="MAIN" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jdn65")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.886934, -0.397865, 0.234629, -0.45996, -0.807239, 0.369869, -0.0422437, 0.435969, 0.89897, -0.512732, 12.6783, -0.67942)
+light_color = Color(0, 0.368627, 0.760784, 1)
+light_energy = 7.625
+light_indirect_energy = 6.77
+light_volumetric_fog_energy = 4.733
+shadow_enabled = true
+shadow_normal_bias = 0.0
+
+[node name="Player" parent="." instance=ExtResource("1_5xfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000266463, 1.49956, 0.000420332)
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+use_collision = true
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_831vq")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(0.238541, -0.0106969, -0.971074, 0.971112, -0.00382158, 0.238592, -0.00626326, -0.999936, 0.00947624, 0, 3.62713, -7)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(-0.00467408, -1.10834, 0.0118853, 0.362858, -0.0142769, -0.92268, 0.924556, 4.10907e-09, 0.362182, 5, 3.62713, -7)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(0.0064351, 0.998983, -0.0446216, -0.545149, -0.0339038, -0.837654, -0.838315, 0.0297157, 0.544376, 1.40261, 3.62713, -11)
+use_collision = true
+radius = 1.4859
+height = 21.1218
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(0.788524, 0, 0, 0, 0.914334, 0, 0, 0, -0.412925, 6.05845, 5.62511, 4.86495)
+use_collision = true
+radius = 1.95484
+height = 5.99942
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1.55296, 0, 0, 0, 4.43748, 0, 0, 0, 1, 0, 3.62713, -16)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(3.388, 0, 0, 0, 1, 0, 0, 0, 1.76887, 11.0605, 3.81858, 0.711468)
+use_collision = true
+radius = 1.4859
+height = 6.65539
+sides = 64
+material = SubResource("StandardMaterial3D_xwm3b")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level"]
+transform = Transform3D(0.845536, -0.25871, -0.467052, 0.447236, 0.820992, 0.354897, 0.291631, -0.508961, 0.809883, -14.169, 13.3154, 5.30379)
+size = Vector3(8.80927, 10.3641, 12.458)
+material = SubResource("StandardMaterial3D_ul7fd")
+
+[node name="Objects" type="Node3D" parent="."]
+
+[node name="Ball" type="RigidBody3D" parent="Objects"]
+transform = Transform3D(-0.0913166, 3.6714, 5.86498, 12.5549, -2.75169, 1.49221, -6.03558, -5.77945, 3.01527, 10.4779, 7.45311, 10.8676)
+mass = 0.5
+physics_material_override = SubResource("PhysicsMaterial_d6ogm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Ball"]
+shape = SubResource("SphereShape3D_0eais")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/Ball"]
+mesh = SubResource("SphereMesh_404uw")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Objects/Ball"]
+transform = Transform3D(0.655823, 0.0300449, 0.754315, -0.519417, -0.707129, 0.479762, 0.547813, -0.706445, -0.448147, 1.32152, 4.10462, -2.82635)
+polygon = PackedVector2Array(0.325438, -0.0762086, 0.373181, 0.355866, 1, 1, 1, 0)
+
+[node name="SimpleXR" parent="." instance=ExtResource("5_jonr4")]
+visible = false
