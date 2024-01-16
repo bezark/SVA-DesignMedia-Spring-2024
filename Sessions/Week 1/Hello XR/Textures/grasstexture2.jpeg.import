@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bolt815s8k1rd"
-path.s3tc="res://.godot/imported/Brick_01-256x256.png-04031bf3dbebfc0e66674f18409185cf.s3tc.ctex"
+uid="uid://dyha80wv546jn"
+path.s3tc="res://.godot/imported/grasstexture2.jpeg-23bd53dffda4bbf860b76b782b0d86af.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Brick/Brick_01-256x256.png"
-dest_files=["res://.godot/imported/Brick_01-256x256.png-04031bf3dbebfc0e66674f18409185cf.s3tc.ctex"]
+source_file="res://Textures/grasstexture2.jpeg"
+dest_files=["res://.godot/imported/grasstexture2.jpeg-23bd53dffda4bbf860b76b782b0d86af.s3tc.ctex"]
 
 [params]
 

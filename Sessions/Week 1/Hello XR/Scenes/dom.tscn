@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://c743u0rmjvumf"]
 
 [ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://player.tscn" id="1_i3fff"]
-[ext_resource type="Texture2D" uid="uid://dh2g6trexlovo" path="res://grasstexture2.jpeg" id="2_ia1ll"]
+[ext_resource type="Texture2D" uid="uid://dyha80wv546jn" path="res://Textures/grasstexture2.jpeg" id="2_ia1ll"]
 [ext_resource type="Texture2D" uid="uid://chlfbd1emukuw" path="res://Textures/Dirt/Dirt_01-256x256.png" id="3_jsigr"]
 [ext_resource type="Texture2D" uid="uid://dqui4vhnpmnr4" path="res://Textures/Plaster/Plaster_01-256x256.png" id="4_rd6a6"]
 [ext_resource type="Texture2D" uid="uid://byd1cxvsghqli" path="res://Textures/Tile/Tile_08-256x256.png" id="5_4fv3m"]
