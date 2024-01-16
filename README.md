@@ -36,7 +36,7 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
 - **Workshop:** Introduction to spatial computing and immersive media. Basic project setup in Godot 4.
-- Assignment - Reflection 1: What does XR mean to you?
+- **Homework:** - Reflection 1: What does XR mean to you?
 
 ### **__NO CLASS 1/23__**
 

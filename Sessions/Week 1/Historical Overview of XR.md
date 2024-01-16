@@ -4,6 +4,7 @@
    - Definition of XR as an umbrella term encompassing AR, VR, and MR.
    - Brief explanation of how XR merges the virtual and real worlds.
 
+
 **II. Early Concepts and Philosophical Foundations**
    - Reference to early visions of virtual experiences (e.g., Stanley G. Weinbaum's "Pygmalion's Spectacles," 1935).
    - https://www.gutenberg.org/ebooks/22893?msg=welcome_stranger
@@ -48,4 +49,3 @@
    - Reflect on how XR technologies have evolved and their transformative potential.
 
 **XII. Q&A Session**
-
