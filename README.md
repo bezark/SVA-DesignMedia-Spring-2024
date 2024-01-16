@@ -2,6 +2,8 @@
 
 [**OFFICIAL SYLLABUS FOUND HERE**](https://sva.simplesyllabus.com/api2/doc-pdf/vk8sqtdsw/Spring-2024-UG%2FGR-DSD-4716-B-DESIGN-MEDIA.pdf?locale=en-US)
 
+[PLEASE FILL THIS OUT](https://forms.gle/66AHG6BzppY9N1As5)
+
 # **Course Overview**
 
 This course aims to provide an in-depth understanding of Extended Reality (XR) and spatial computing for immersive media. From exploring historical milestones to understanding contemporary applications, students will gain hands-on experience and learn to translate their artistic voice into the spatial context of immersive media. The course is suitable for beginners with minimal experience in XR/AR/VR coding, and for those looking to expand their knowledge.
