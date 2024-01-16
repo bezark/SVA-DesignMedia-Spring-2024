@@ -4,4 +4,3 @@
 
 - Download [Godot 4.2.1](https://godotengine.org/) and [Github Desktop](https://desktop.github.com)
 - Clone this repository
--
