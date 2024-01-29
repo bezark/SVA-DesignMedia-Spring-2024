@@ -37,5 +37,3 @@
 - **Visual Aids:** Use slides with images and videos of different XR hardware and software to provide visual context.
 - **Interactive Elements:** If possible, demonstrating or showcasing actual XR hardware during the lecture can significantly enhance engagement.
 - **Real-World Examples:** Reference specific applications or case studies where these technologies have been used effectively.
-
-This outline should provide a comprehensive overview of the technologies enabling XR, covering both historical and modern perspectives, and offering insights into the future of XR technology.
