@@ -18,6 +18,6 @@ Write a reflective piece that engages with any number of these questions or expl
 
 ## Grading
 - Writing must be 500-1000 words.  
-- 2 points for writing at least one sentence. 
-- 1 points for writing +500 word. 
+- 2 points for writing at least one sentence.
+- 1 points for writing +500 word.
 - 1 Points for writing +500 words that thoughtfully explore the topic.
