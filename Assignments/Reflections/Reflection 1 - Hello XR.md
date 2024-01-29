@@ -1,4 +1,4 @@
-## Description
+## Hello XR
 
 As we embark on our exploration of Extended Reality (XR), including its various facets like Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), take a moment to reflect on the concept of the 'metaverse' - a collective virtual shared space created by the convergence of virtually enhanced physical reality, AR, and the internet.
 
