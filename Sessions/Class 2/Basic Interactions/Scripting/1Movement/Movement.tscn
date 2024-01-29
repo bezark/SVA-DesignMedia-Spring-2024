@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6lndeu6ewerd"]
+
+[ext_resource type="PackedScene" uid="uid://dvhvva0mfc1n6" path="res://Scripting/basic_level.tscn" id="1_fy30v"]
+[ext_resource type="Script" path="res://Scripting/1Movement/Sphere.gd" id="2_cf42y"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dggv4"]
+
+[node name="Movement" type="Node3D"]
+
+[node name="Level" parent="." instance=ExtResource("1_fy30v")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
+
+[node name="Sphere" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = SubResource("SphereMesh_dggv4")
+script = ExtResource("2_cf42y")

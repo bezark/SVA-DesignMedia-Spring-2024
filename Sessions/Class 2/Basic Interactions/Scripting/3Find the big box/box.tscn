@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dro07r8xff4fc"]
+
+[ext_resource type="Script" path="res://Scripting/3Find the big box/Box.gd" id="1_crtry"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cdyki"]
+size = Vector3(10, 4, 10)
+
+[node name="Box" type="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+size = Vector3(4, 4, 4)
+script = ExtResource("1_crtry")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_cdyki")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
