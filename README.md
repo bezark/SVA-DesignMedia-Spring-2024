@@ -36,6 +36,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 ### *Class 1 1/16: Introduction to XR*
 
+[Class Notes](https://github.com/bezark/SVA-DesignMedia-Spring-2024/tree/main/Sessions/Class%201)
+
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
 - **Workshop:** Introduction to spatial computing and immersive media. Basic project setup in Godot 4.
 - **Homework:** - Reflection 1: What does XR mean to you?
@@ -48,6 +50,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Homework**: Watch Introduction to Godot Recording and complete Lab 1
 
 #### *Class 2 1/30: Foundations of Spatial Computing*
+
+[Class Notes](https://github.com/bezark/SVA-DesignMedia-Spring-2024/tree/main/Sessions/Class%202)
 
 - **Lecture:** Technologies enabling XR: Hardware and Software.
 - **Workshop:** Hands-on experience with basic XR tools. Introduction to Godot 4.
