@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://b02vsalgwxybd"]
+
+[ext_resource type="Script" path="res://Ball.gd" id="1_bo37a"]
+[ext_resource type="PackedScene" uid="uid://cbdfvctpbdid2" path="res://addons/kaykit_city_builder_bits/Assets/gltf/base.gltf" id="2_gktac"]
+[ext_resource type="PackedScene" uid="uid://c5asjv64r34wt" path="res://addons/kaykit_city_builder_bits/Assets/gltf/building_C.gltf" id="3_c1lgb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v63g2"]
+albedo_color = Color(0.282353, 0.247059, 0.101961, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_op3q3"]
+albedo_color = Color(0.2, 0.168627, 1, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wfuvn"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ld7ko"]
+sky_material = SubResource("ProceduralSkyMaterial_wfuvn")
+
+[sub_resource type="Environment" id="Environment_tn31i"]
+background_mode = 2
+sky = SubResource("Sky_ld7ko")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="movement scene" type="Node3D"]
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+material_override = SubResource("StandardMaterial3D_v63g2")
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_op3q3")
+
+[node name="Camera3D" type="Camera3D" parent="Level"]
+transform = Transform3D(0.988876, 0, 0.148741, 0, 1, 0, -0.148741, 0, 0.988876, 0, 2.16891, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Level"]
+environment = SubResource("Environment_tn31i")
+
+[node name="Ball" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.12515, -2.64327)
+script = ExtResource("1_bo37a")
+
+[node name="Timer" type="Timer" parent="Ball"]
+autostart = true
+
+[node name="base2" parent="." instance=ExtResource("2_gktac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0154, 0, 10.0556)
+
+[node name="base3" parent="." instance=ExtResource("2_gktac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58425, 2.81243, 0)
+
+[node name="building_C2" parent="." instance=ExtResource("3_c1lgb")]
+transform = Transform3D(-0.961612, 0, -0.274412, 0, 1, 0, 0.274412, 0, -0.961612, -4.35796, 0.620278, 0.496769)
+
+[connection signal="timeout" from="Ball/Timer" to="Ball" method="_on_timer_timeout"]
