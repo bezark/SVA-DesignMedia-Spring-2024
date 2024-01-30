@@ -7,12 +7,13 @@
   - Reflections review
   - Lab review
 
-- **Discussion:** Ready Player One (30 Min)
-- **Lecture:** Technologies enabling XR: Hardware and Software. (30 min)
+- **Discussion:** Ready Player One (20 Min)
+- **Lecture:** Technologies enabling XR: Hardware and Software. (40 min)
 - **BREAK** (10 min)
 - **Workshop:** Hands-on experience with basic XR tools. Introduction to Godot 4. (60 Min)
--
-- **Field Trip:** XR Inspirations (30 Min)
+  - Interactions
+  - Code
+- **Field Trip:** XR Inspirations (20 Min)
   - Youtube
   - Steam
   - Godot XR community
