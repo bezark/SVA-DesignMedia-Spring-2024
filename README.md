@@ -70,7 +70,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Theme:** Storytelling and narrative techniques in XR.
 - **Lecture:** Crafting compelling narratives in XR spaces.
 - **Workshop:** Implementing storytelling elements in Godot 4 projects.
-
+- **DUE: Lab 2**
+- **Homework: Reflection 3**
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
@@ -80,12 +81,17 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Theme:** Creating immersive XR environments.
 - **Lecture:** Principles of immersive design and world-building in XR.
 - **Workshop:** Designing immersive environments with Blender and  Godot 4.
+- **PROJECT ASSIGNMENT:** Pattern Exploration and Pattern Language
+- **DUE: Reflection 3**
+- **Homework: Lab 3**
+
 
 #### *Class 6 2/27: Feedback & Interaction*
 
 - **Theme:** Designing interactive elements for user engagement.
 - **Lecture:** Best practices in interactivity for XR.
 - **Workshop:** Developing interactive features in Godot 4.
+- **DUE:** Lab 3
 
 #### *Class 7 3/12: Accessibility & Interface*
 
@@ -104,7 +110,7 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 #### *Class 9 3/26: Looking Back and Forwards*
 
-- **Remote Class**
+- **Potentially Remote Class**
 - Reflection on patterns and imagining new ones.
 
 

@@ -1,7 +1,7 @@
 extends Node3D
 
 @export var boxes_to_spawn = 10
-const BOX = preload("res://Scripting/box.tscn")
+const BOX = preload("res://Scripting/3Find the big box/box.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for box in boxes_to_spawn:
