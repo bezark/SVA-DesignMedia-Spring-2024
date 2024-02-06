@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://d1vmi300x461x"]
+
+[ext_resource type="Script" path="res://Signals/Sun.gd" id="1_famdk"]
+[ext_resource type="Script" path="res://Signals/RigidBody3DController.gd" id="1_to42v"]
+[ext_resource type="Script" path="res://Signals/Area3DDemo.gd" id="2_0e7hh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx6ll"]
+albedo_color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mc257"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_c2wlk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id278"]
+albedo_color = Color(0.145098, 1, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_3jk5e"]
+material = SubResource("StandardMaterial3D_id278")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5t1yc"]
+
+[node name="SignalDemo" type="Node3D"]
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 4, 1.10714)
+
+[node name="Sun" type="DirectionalLight3D" parent="Level"]
+transform = Transform3D(-4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 0, 0, 0)
+script = ExtResource("1_famdk")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+use_collision = true
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_lx6ll")
+
+[node name="Button-Impulse" type="Node3D" parent="."]
+
+[node name="Button" type="Button" parent="Button-Impulse"]
+offset_right = 306.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 64
+text = "PRESS ME"
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Button-Impulse"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
+physics_material_override = SubResource("PhysicsMaterial_mc257")
+script = ExtResource("1_to42v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Button-Impulse/RigidBody3D"]
+shape = SubResource("SphereShape3D_c2wlk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Button-Impulse/RigidBody3D"]
+mesh = SubResource("SphereMesh_3jk5e")
+
+[node name="Area3D Demo" type="Node3D" parent="."]
+process_mode = 4
+
+[node name="Area3D" type="Area3D" parent="Area3D Demo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4)
+gravity_point_center = Vector3(0, 1, 0)
+gravity_direction = Vector3(0, 1, 0)
+script = ExtResource("2_0e7hh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D Demo/Area3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3, -1)
+shape = SubResource("BoxShape3D_5t1yc")
+
+[connection signal="button_down" from="Button-Impulse/Button" to="Button-Impulse/RigidBody3D" method="_on_button_button_down"]
+[connection signal="body_entered" from="Area3D Demo/Area3D" to="Area3D Demo/Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D Demo/Area3D" to="Level/Sun" method="_on_area_3d_body_exited"]

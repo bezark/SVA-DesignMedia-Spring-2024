@@ -1,14 +1,15 @@
-extends Node3D
+extends DirectionalLight3D
 
-@export var boxes_to_spawn = 10
-const BOX = preload("res://3Find the big box/box.tscn")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for box in boxes_to_spawn:
-		var new_box = BOX.instantiate()
-		add_child(new_box)
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_area_3d_body_exited(body):
+	light_energy = 1.

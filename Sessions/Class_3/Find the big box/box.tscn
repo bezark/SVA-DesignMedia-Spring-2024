@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dro07r8xff4fc"]
 
-[ext_resource type="Script" path="res://Scripting/3Find the big box/Box.gd" id="1_crtry"]
+[ext_resource type="Script" path="res://Find the big box/Box.gd" id="1_sxxgk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cdyki"]
 size = Vector3(10, 4, 10)
@@ -8,7 +8,7 @@ size = Vector3(10, 4, 10)
 [node name="Box" type="CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 size = Vector3(4, 4, 4)
-script = ExtResource("1_crtry")
+script = ExtResource("1_sxxgk")
 
 [node name="Area3D" type="Area3D" parent="."]
 

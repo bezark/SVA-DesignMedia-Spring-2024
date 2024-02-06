@@ -26,5 +26,6 @@ script = ExtResource("1_hulpw")
 
 [node name="MouseMover" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+visible = false
 mesh = SubResource("BoxMesh_qq0ff")
 script = ExtResource("2_n7agf")

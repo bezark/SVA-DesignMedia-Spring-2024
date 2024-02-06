@@ -14,6 +14,10 @@ config/name="Class 3"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[debug]
+
+shapes/collision/shape_color=Color(0.913725, 0, 0.941176, 1)
+
 [display]
 
 window/size/always_on_top=true
