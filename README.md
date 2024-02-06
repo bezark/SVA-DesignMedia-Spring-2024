@@ -40,14 +40,14 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 - **Lecture:** Overview of XR, AR, and VR: Historical Milestones.
 - **Workshop:** Introduction to spatial computing and immersive media. Basic project setup in Godot 4.
-- **Homework:** - Reflection 1: What does XR mean to you?
+- **Homework: [Reflection 1: What does XR mean to you?](Assignments/Reflections/Reflection 1 - Hello XR.md)**
 
 ### **__NO CLASS 1/23__**
 
 - **DUE:**
   - **Reflection 1 What does XR mean to you?**
   - **Watch and respond to Ready Player 1**
-- **Homework**: Watch Introduction to Godot Recording and complete Lab 1
+- **Homework**: Watch Introduction to Godot Recording and complete [Lab 1](https://github.com/bezark/SVA-DesignMedia-Spring-2024/blob/main/Assignments/Labs/Lab%201.md)
 
 #### *Class 2 1/30: Foundations of Spatial Computing*
 
@@ -56,12 +56,12 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Lecture:** Technologies enabling XR: Hardware and Software.
 - **Workshop:** Hands-on experience with basic XR tools. Introduction to Godot 4.
 - **DUE: Lab 1**
-- **Homework: Reflection 2 - write 3 250 word responses to other students work**
+- **Homework: [Reflection 2- First Person View](Assignments/Reflections/Reflection 2 - First Person View.md)**
 
 #### *Class 3 2/6: Git, Conditionals and Code*
 - **Workshop:** Git, Conditionals, Input, Signals, and Nodes
 - **DUE: Reflection 2**
-- **Homework: Lab 2**
+- **Homework: [Lab 2](https://github.com/bezark/SVA-DesignMedia-Spring-2024/blob/main/Assignments/Labs/Lab%202.md)**
 
 #### *Class 4 2/13: Narrative and Storytelling in XR*
 
