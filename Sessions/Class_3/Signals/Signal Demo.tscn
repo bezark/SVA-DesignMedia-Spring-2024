@@ -44,7 +44,7 @@ theme_override_font_sizes/font_size = 64
 text = "PRESS ME"
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Button-Impulse"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28179, -5)
 physics_material_override = SubResource("PhysicsMaterial_mc257")
 script = ExtResource("1_to42v")
 
@@ -55,10 +55,10 @@ shape = SubResource("SphereShape3D_c2wlk")
 mesh = SubResource("SphereMesh_3jk5e")
 
 [node name="Area3D Demo" type="Node3D" parent="."]
-process_mode = 4
 
 [node name="Area3D" type="Area3D" parent="Area3D Demo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4)
+gravity_space_override = 3
 gravity_point_center = Vector3(0, 1, 0)
 gravity_direction = Vector3(0, 1, 0)
 script = ExtResource("2_0e7hh")

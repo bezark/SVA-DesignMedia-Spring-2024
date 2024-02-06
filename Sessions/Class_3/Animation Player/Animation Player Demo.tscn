@@ -14,6 +14,21 @@ tonemap_mode = 2
 
 [sub_resource type="TorusMesh" id="TorusMesh_f6yej"]
 
+[sub_resource type="Animation" id="Animation_rgfbu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DirectionalLight3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.0472, 2.61799, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_yk6n8"]
 resource_name = "Spin"
 length = 3.0
@@ -43,21 +58,6 @@ tracks/1/keys = {
 "values": [Vector3(-1.0472, 2.61799, 0), Vector3(1.08688, 1.7434, -0.650625)]
 }
 
-[sub_resource type="Animation" id="Animation_rgfbu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DirectionalLight3D:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-1.0472, 2.61799, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h5rr8"]
 _data = {
 "RESET": SubResource("Animation_rgfbu"),
@@ -76,7 +76,7 @@ environment = SubResource("Environment_571s2")
 [node name="Camera3D" type="Camera3D" parent="."]
 
 [node name="Doughnut" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.099129, -0.995074, 4.34961e-08, 0, -4.37114e-08, -1, 0.995075, 0.099129, -4.33307e-09, 0, 0, -4)
+transform = Transform3D(0.099129, -0.995074, 4.34961e-08, 0, -4.37114e-08, -1, 0.995075, 0.0991289, -4.33306e-09, 0, 0, -4)
 mesh = SubResource("TorusMesh_f6yej")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

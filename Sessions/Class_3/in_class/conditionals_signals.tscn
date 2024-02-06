@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://y7mohko8gtl7"]
+
+[ext_resource type="Script" path="res://in_class/mover.gd" id="1_nap22"]
+[ext_resource type="Script" path="res://in_class/MeshInstance3D.gd" id="2_1j0bn"]
+[ext_resource type="Script" path="res://in_class/mouseMover.gd" id="3_xt2dl"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4pl8s"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_d2kk4"]
+
+[node name="ConditionalsSignals" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="mover" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.23075)
+visible = false
+mesh = SubResource("CapsuleMesh_4pl8s")
+script = ExtResource("1_nap22")
+condition_to_check = false
+
+[node name="donugh_boi" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.106524, -0.99431, 0, 0.99431, 0.106524, 0, 0, -1.86619)
+visible = false
+mesh = SubResource("TorusMesh_d2kk4")
+script = ExtResource("2_1j0bn")
+
+[node name="columns" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="columns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4221, 0, -8.9891)
+height = 6.91996
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="columns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4221, 0, -20.8493)
+height = 6.91996
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="columns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4221, 0, -15.2293)
+height = 6.91996
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, -7.45058e-09, 0, 7.45058e-09, 1, 0, 0, 4.63453)
+
+[node name="mouseMover" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.12134)
+script = ExtResource("3_xt2dl")
