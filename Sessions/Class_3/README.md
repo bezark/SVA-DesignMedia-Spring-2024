@@ -41,7 +41,7 @@
   - Kenny Assets
 
 # Homework:
-- Lab 2
+- [Lab 2](/Assignments/Labs/Lab_2.md)
 - Read:
   - [Mirror World](https://www.wired.com/story/mirrorworld-ar-next-big-tech-platform/)
   - [3 Rules for designing Primo VR](https://www.wired.com/story/3-secrets-to-designing-primo-virtual-reality/)
