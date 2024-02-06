@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvhqx2kdjg06"]
+
+[ext_resource type="Script" path="res://Conditionals/If Mover.gd" id="1_hulpw"]
+[ext_resource type="Script" path="res://Conditionals/MouseMover.gd" id="2_n7agf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dbwas"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m6jng"]
+albedo_color = Color(1, 0.286275, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qq0ff"]
+material = SubResource("StandardMaterial3D_m6jng")
+
+[node name="ConditionalsDemo" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="If Mover" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = SubResource("SphereMesh_dbwas")
+script = ExtResource("1_hulpw")
+
+[node name="MouseMover" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+mesh = SubResource("BoxMesh_qq0ff")
+script = ExtResource("2_n7agf")

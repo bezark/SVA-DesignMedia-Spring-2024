@@ -58,10 +58,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **DUE: Lab 1**
 - **Homework: Reflection 2 - write 3 250 word responses to other students work**
 
-#### *Class 3 2/6: Human-Centered Design in XR*
-
-- **Lecture:** Principles of human-centered design.
-- **Workshop:** Design thinking workshop: Ideating for XR.
+#### *Class 3 2/6: Git, Conditionals and Code*
+- **Workshop:** Git, Conditionals, Input, Signals, and Nodes
 - **DUE: Reflection 2**
 - **Homework: Lab 2**
 
@@ -72,6 +70,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **Workshop:** Implementing storytelling elements in Godot 4 projects.
 - **DUE: Lab 2**
 - **Homework: Reflection 3**
+
+
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
@@ -91,7 +91,7 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Theme:** Designing interactive elements for user engagement.
 - **Lecture:** Best practices in interactivity for XR.
 - **Workshop:** Developing interactive features in Godot 4.
-- **DUE:** Lab 3
+- **DUE: Lab 3**
 
 #### *Class 7 3/12: Accessibility & Interface*
 

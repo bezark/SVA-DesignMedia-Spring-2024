@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvhvva0mfc1n6"]
+
+[ext_resource type="Texture2D" uid="uid://d2m0iouueeurn" path="res://3Find the big box/grasstexture2.jpeg" id="1_pbjcs"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ej5uy"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_1cyvr"]
+sky_material = SubResource("ProceduralSkyMaterial_ej5uy")
+
+[sub_resource type="Environment" id="Environment_n1r8h"]
+background_mode = 2
+sky = SubResource("Sky_1cyvr")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cyoul"]
+albedo_texture = ExtResource("1_pbjcs")
+uv1_scale = Vector3(10, 10, 10)
+
+[node name="Level" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n1r8h")
+
+[node name="Ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+material_override = SubResource("StandardMaterial3D_cyoul")
+use_collision = true
+size = Vector3(100, 1, 100)

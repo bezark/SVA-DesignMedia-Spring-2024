@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dimet5et8sg78"]
+
+[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://3Find the big box/player.tscn" id="1_lmgja"]
+[ext_resource type="PackedScene" uid="uid://dvhvva0mfc1n6" path="res://3Find the big box/basic_level.tscn" id="2_boydc"]
+[ext_resource type="Script" path="res://3Find the big box/box_spawner.gd" id="3_mwy2y"]
+
+[node name="Area Demo" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_lmgja")]
+
+[node name="Score" type="Label" parent="Player"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0"
+
+[node name="Level" parent="." instance=ExtResource("2_boydc")]
+
+[node name="Boxes" type="Node3D" parent="."]
+script = ExtResource("3_mwy2y")
