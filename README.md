@@ -66,6 +66,8 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 #### *Class 4 2/13: Narrative and Storytelling in XR*
 
+[Class Notes](Sessions/Class_4)
+
 - **Theme:** Storytelling and narrative techniques in XR.
 - **Lecture:** Crafting compelling narratives in XR spaces.
 - **Workshop:** Implementing storytelling elements in Godot 4 projects.

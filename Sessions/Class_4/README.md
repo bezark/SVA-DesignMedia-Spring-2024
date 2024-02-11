@@ -1,0 +1,18 @@
+## Outline
+- Discussion 3:20 - 3:50
+  - First Person View
+  - Mirrorworld
+  - Design Pattern Project
+- Continuing to Code 3:50- 4:30
+  - Lab Questions
+  - Walkthrough
+  - Signals
+- 4:30 - 4:40 Break
+- [Crafting compelling narratives in XR spaces](https://docs.google.com/presentation/d/15XQs10hoVlaxUGuo6hONBR-1INw4MEl3HPVcGNDrHhw/edit?usp=sharing). 4:40 - 5:00
+- Implementing storytelling elements in Godot 4 projects. 5:00 - 5:30
+  - Models
+  - Animation Player
+  - Label3D
+  - Spatial Sound
+  - Light
+- Experimenting 5:30-6:10

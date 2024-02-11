@@ -1,5 +1,5 @@
 # Artists
-
+- [Tender Claws](https://tenderclaws.com/)
 - [Dr.  Nonny de la Peña - Emblematic Group](https://emblematicgroup.com/#)
 - [Ian Cheng](http://iancheng.com/)
 - [Amelia Winger-Bearskin](https://www.studioamelia.com/art)
