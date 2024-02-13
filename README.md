@@ -89,7 +89,7 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Theme:** Creating immersive XR environments.
 - **Lecture:** Principles of immersive design and world-building in XR.
 - **Workshop:** Designing immersive environments with Blender and  Godot 4.
-- **PROJECT ASSIGNMENT:** Pattern Exploration and Pattern Language
+- **PROJECT ASSIGNMENT:** [Pattern Exploration and Pattern Language](Assignments/Pattern_Language_Project.md)
 - **DUE: Reflection 3**
 - **Homework: Lab 3**
 
