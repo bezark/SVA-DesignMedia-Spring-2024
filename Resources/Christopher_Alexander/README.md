@@ -5,4 +5,4 @@ Please skim the following books:
 - [The Timeless Way of Building](The_Timeless_Way_of_Building_Complete.pdf)
 - [A Pattern Language](Alexander_A_Pattern_Language.pdf)
 
-[Christopher Alexander - Patterns in Architecture](https://www.youtube.com/watch?v=98LdFA-_zfA)
+You can also watch a video of him talkbing about patterns in computer science: [Christopher Alexander - Patterns in Architecture](https://www.youtube.com/watch?v=98LdFA-_zfA)
