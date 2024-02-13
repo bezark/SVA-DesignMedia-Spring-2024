@@ -64,15 +64,20 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **DUE: Reflection 2**
 - **Homework: [Lab 2](Assignments/Labs/Lab_2.md)**
 
-#### *Class 4 2/13: Narrative and Storytelling in XR*
+
+#### *Class 4 2/13: SNOW DAY!*
+- **DUE: Lab 2**
+- **Homework: [Reflection 3](Assignments/Reflections/Reflection3_DefineMetaverse.md)**
+- Start Exploring [Christopher Alexander](Resources/Christopher_Alexander/README.md)
+
+
+*Narrative and Storytelling in XR*
 
 [Class Notes](Sessions/Class_4)
 
 - **Theme:** Storytelling and narrative techniques in XR.
 - **Lecture:** Crafting compelling narratives in XR spaces.
 - **Workshop:** Implementing storytelling elements in Godot 4 projects.
-- **DUE: Lab 2**
-- **Homework: Reflection 3**
 
 
 ## Part 2: Patterns
