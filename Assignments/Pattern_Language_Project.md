@@ -1,5 +1,7 @@
 ### XR Pattern Language
 
+[Christopher Alexander](Resources/Christopher_Alexander/README.md)
+
 **Objective:** You will identify, articulate, and create an XR design pattern within Godot 4, contributing to a class-wide virtual exhibition of XR design patterns in the form of an XR [Pattern Language](https://en.wikipedia.org/wiki/Pattern_language). This project will deepen understanding of design principles in XR environments and demonstrate how these principles can be applied to create engaging, immersive experiences.
 
 **Assignment Tasks:**
