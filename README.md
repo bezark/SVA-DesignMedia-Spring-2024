@@ -1,6 +1,6 @@
 # SVA-DesignMedia-Spring-2024
 
-# Top of Mind
+## Top of Mind
 - [Workshop Whiteboard](https://www.tldraw.com/r/7_Za_1286Cij99w4KyzOZ?viewport=-0,-114,3072,1612&page=page:page)
 - [Class 5 Resources](/Sessions/Class_5)
 
