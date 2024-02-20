@@ -1,9 +1,61 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1xv4nvpdwcpv"]
+[gd_scene load_steps=10 format=3 uid="uid://b1xv4nvpdwcpv"]
 
 [ext_resource type="Script" path="res://script.gd" id="1_levlc"]
 [ext_resource type="Script" path="res://Mover.gd" id="2_dalrb"]
+[ext_resource type="ArrayMesh" uid="uid://bulc74xaxa7o1" path="res://addons/kaykit_furniture_bits/Assets/obj/bed_double_B.obj" id="3_kgaak"]
+[ext_resource type="ArrayMesh" uid="uid://ciibgua144n7l" path="res://addons/kaykit_furniture_bits/Assets/obj/book_set.obj" id="4_mu7u3"]
+[ext_resource type="PackedScene" uid="uid://d4mprod0u2f2o" path="res://addons/kaykit_furniture_bits/Assets/gltf/bed_double_A.gltf" id="5_lsmyf"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_hqpia"]
+
+[sub_resource type="Animation" id="Animation_ed2rn"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 3.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 2.29757), Vector3(0, 0, 1.39914)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera3D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.9, 3.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bkeai"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uo2xc"]
+_data = {
+"RESET": SubResource("Animation_bkeai"),
+"new_animation": SubResource("Animation_ed2rn")
+}
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_levlc")
@@ -13,7 +65,7 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.28195)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.29757)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
@@ -21,6 +73,26 @@ autostart = true
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_hqpia")
 script = ExtResource("2_dalrb")
+
+[node name="Bedroom" type="Node3D" parent="."]
+
+[node name="BedDoubleB" type="MeshInstance3D" parent="Bedroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95785, 0, -1.05323)
+mesh = ExtResource("3_kgaak")
+skeleton = NodePath("../..")
+
+[node name="BookSet" type="MeshInstance3D" parent="Bedroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.46265, -1.19209e-07, -2.6065)
+mesh = ExtResource("4_mu7u3")
+skeleton = NodePath("../..")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bedroom"]
+libraries = {
+"": SubResource("AnimationLibrary_uo2xc")
+}
+
+[node name="bed_double_A2" parent="." instance=ExtResource("5_lsmyf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26776, 0, -1.29263)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="MeshInstance3D" method="_on_timer_timeout"]
