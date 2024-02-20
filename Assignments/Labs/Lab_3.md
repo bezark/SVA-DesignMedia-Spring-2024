@@ -4,11 +4,11 @@ Please complete the following exercise:
 
 Create a 3D godot project that has:
 - A github repository (can be the same repository from last week)
-- The followinf Technical criteria:
+- The following Technical criteria:
   - A main scene
   - A camera
   - A light source
-  - An animation player that a node.
+  - An animation player that plays an animation.
   - A node that responds to user input
   - A node that sends a signal to another node
 - An experience that has a beginning, a middle and an end.

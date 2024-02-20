@@ -26,3 +26,6 @@
   - Light
 
   - Experimenting 5:40-6:00
+
+
+Homework: [Lab 3](/Assignments/Labs/Lab_3.md)
