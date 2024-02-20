@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1xv4nvpdwcpv"]
+
+[ext_resource type="Script" path="res://script.gd" id="1_levlc"]
+[ext_resource type="Script" path="res://Mover.gd" id="2_dalrb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_hqpia"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_levlc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.28195)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_hqpia")
+script = ExtResource("2_dalrb")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="MeshInstance3D" method="_on_timer_timeout"]
+[connection signal="movingLeft" from="MeshInstance3D" to="." method="_on_mesh_instance_3d_moving_left"]

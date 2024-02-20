@@ -76,51 +76,56 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 [Class Notes](Sessions/Class_4)
 
-- **Theme:** Storytelling and narrative techniques in XR.
-- **Lecture:** Crafting compelling narratives in XR spaces.
-- **Workshop:** Implementing storytelling elements in Godot 4 projects.
+
 
 
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
-#### *Class 5 2/20: Immersion & Environment*
+#### *Class 5 2/20: Pattern Languages and Catching Up
+
+- **Theme:** Storytelling and narrative techniques in XR.
+- **DUE: Reflection 3**
+- **PROJECT ASSIGNMENT:** [Pattern Exploration and Pattern Language](Assignments/Pattern_Language_Project.md)
+
+
+#### *Class 6 2/27: Immersion & Environment*
 
 - **Theme:** Creating immersive XR environments.
+- **Lecture:** Crafting compelling narratives in XR spaces.
+- **Workshop:** Implementing storytelling elements in Godot 4 projects.
 - **Lecture:** Principles of immersive design and world-building in XR.
 - **Workshop:** Designing immersive environments with Blender and  Godot 4.
-- **PROJECT ASSIGNMENT:** [Pattern Exploration and Pattern Language](Assignments/Pattern_Language_Project.md)
-- **DUE: Reflection 3**
+
+
 - **Homework: [Lab 3](/Assignments/Labs/Lab_3.md)**
 
+**SPRING BREAK**
 
-#### *Class 6 2/27: Feedback & Interaction*
+#### *Class 7 3/12: Feedback & Interaction*
 
 - **Theme:** Designing interactive elements for user engagement.
 - **Lecture:** Best practices in interactivity for XR.
 - **Workshop:** Developing interactive features in Godot 4.
 - **DUE: Lab 3**
 
-#### *Class 7 3/12: Accessibility & Interface*
+#### *Class 8 3/19: Accessibility & Interface*
 
 - **Theme:** UI/UX design in XR.
 - **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
 - **Workshop:** Building UI/UX components in Godot 4.
 
-#### *Class 8 3/19: Extension and Context*
+## Part 3: Visions
+
+#### *Class 9 3/26: Extension and Context*
 
 - **Theme:** AR, Context awareness and history
 - **Lecture:** History, Geography, Continuity
 - **Workshop:** WebXR, Save Data and APIs
 - **DUE: Pattern Explorations**
 
-## Part 3: Visions
 
-#### *Class 9 3/26: Looking Back and Forwards*
-
-- **Potentially Remote Class**
-- Reflection on patterns and imagining new ones.
 
 
 - **Lecture:** Trends and future developments in XR.
