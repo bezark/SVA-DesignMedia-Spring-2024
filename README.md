@@ -1,8 +1,7 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
-- [Workshop Whiteboard](https://www.tldraw.com/r/7_Za_1286Cij99w4KyzOZ?viewport=-0,-114,3072,1612&page=page:page)
-- [Class 5 Resources](/Sessions/Class_5)
+- [Class 6 Resources](/Sessions/Class_6)
 
 
 # **Course Overview**
@@ -78,7 +77,7 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
-#### *Class 5 2/20: Pattern Languages and Catching Up
+#### *Class 5 2/20: Pattern Languages and Catching Up*
 [Class Notes](Sessions/Class_5/README.md)
 - **Theme:** Storytelling and narrative techniques in XR.
 - **DUE: Reflection 3**
