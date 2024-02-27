@@ -74,10 +74,6 @@ This course is broken up into four major parts, with each part lasting roughly 4
 
 
 
-
-
-
-
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
@@ -92,11 +88,9 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 #### *Class 6 2/27: Immersion & Environment/Narrative and Storytelling in XR*
 [Class Notes](Sessions/Class_6/README.md)
-- **Theme:** Creating immersive XR environments.
+- Project Check-in
 - **Lecture:** [Crafting compelling narratives in XR spaces](https://docs.google.com/presentation/d/15XQs10hoVlaxUGuo6hONBR-1INw4MEl3HPVcGNDrHhw/edit?usp=sharing)
-- **Workshop:** Implementing storytelling elements in Godot 4 projects.
-- **Lecture:** Principles of immersive design and world-building in XR.
-- **Workshop:** Designing immersive environments with Blender and  Godot 4.
+- **Workshop:** Implementing storytelling elements in Godot 4 projects and Designing immersive environments with Godot 4.
 
 
 
@@ -115,7 +109,6 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
 - **Workshop:** Building UI/UX components in Godot 4.
 
-## Part 3: Visions
 
 #### *Class 9 3/26: Extension and Context*
 
@@ -125,10 +118,9 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **DUE: Pattern Explorations**
 
 
+## Part 3: Visions
 
-
-- **Lecture:** Trends and future developments in XR.
-- **Workshop:** Discussion on the potential of spatial computing.
+*This section is under construction... stay tuned...*
 
 #### *Class 10 4/2: Presentations*
 

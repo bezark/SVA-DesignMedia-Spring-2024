@@ -1,7 +1,6 @@
 [gd_scene load_steps=35 format=3 uid="uid://ccpvh7jjwx2kj"]
 
 [ext_resource type="ArrayMesh" uid="uid://cxukornkd51ow" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_A.obj" id="1_15wof"]
-[ext_resource type="Script" path="res://City/cityScene.gd" id="1_ybrxe"]
 [ext_resource type="ArrayMesh" uid="uid://ckc65rks05y75" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_E.obj" id="2_1tdsr"]
 [ext_resource type="ArrayMesh" uid="uid://b8wihse7v62g" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_B.obj" id="3_a6av8"]
 [ext_resource type="ArrayMesh" uid="uid://cgd7nrk1cr4bo" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_C.obj" id="4_o2p5w"]
@@ -12,6 +11,7 @@
 [ext_resource type="ArrayMesh" uid="uid://uatvdp23myek" path="res://addons/kaykit_city_builder_bits/Assets/obj/road_straight.obj" id="9_ycg32"]
 [ext_resource type="PackedScene" uid="uid://dw2e4tbpdyi41" path="res://City/streetlight.tscn" id="10_c6pvr"]
 [ext_resource type="PackedScene" path="res://player.tscn" id="10_wdtgr"]
+[ext_resource type="Script" path="res://City/EntranceArea.gd" id="12_ogxa5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vl1yh"]
 sky_top_color = Color(0.00784314, 0.0235294, 0.109804, 1)
@@ -87,11 +87,11 @@ data = PackedVector3Array(-1, 0.07, 1, -1, 0, 1, -1, 0.07, -1, -1, 0.07, -1, -1,
 data = PackedVector3Array(-1, 0.07, 1, -1, 0, 1, -1, 0.07, -1, -1, 0.07, -1, -1, 0, 1, -1, 0, -1, 0.93, 0.1, -1, 1, 0.1, -1, 0.93, 0.1, 1, 0.93, 0.1, 1, 1, 0.1, -1, 1, 0.1, 1, 1, 0.07, -1, 1, 0, -1, 1, 0.07, 1, 1, 0.07, 1, 1, 0, -1, 1, 0, 1, -0.9, 0.07, -1, -1, 0.07, -1, -0.9, 0, -1, -0.9, 0, -1, -1, 0.07, -1, -1, 0, -1, 0.9, 0.07, 1, 1, 0.07, 1, 0.9, 0, 1, 0.9, 0, 1, 1, 0.07, 1, 1, 0, 1, 0.9, 0.07, -1, 1, 0.07, -1, 0.93, 0.1, -1, 0.93, 0.1, -1, 1, 0.07, -1, 1, 0.1, -1, -0.9, 0.07, -1, -0.9, 0.07, 1, -0.93, 0.1, -1, -0.93, 0.1, -1, -0.9, 0.07, 1, -0.93, 0.1, 1, -1, 0.07, -1, -0.9, 0.07, -1, -1, 0.1, -1, -1, 0.1, -1, -0.9, 0.07, -1, -0.93, 0.1, -1, 0.9, 0, 1, 0.9, 0, -1, -0.9, 0, 1, -0.9, 0, 1, 0.9, 0, -1, -0.9, 0, -1, -0.9, 0.07, 1, 0.9, 0.07, 1, -0.9, 0, 1, -0.9, 0, 1, 0.9, 0.07, 1, 0.9, 0, 1, -0.9, 0, -1, -1, 0, -1, -0.9, 0, 1, -0.9, 0, 1, -1, 0, -1, -1, 0, 1, 1, 0, -1, 0.9, 0, -1, 1, 0, 1, 1, 0, 1, 0.9, 0, -1, 0.9, 0, 1, 0.9, 0.07, -1, -0.9, 0.07, -1, 0.9, 0, -1, 0.9, 0, -1, -0.9, 0.07, -1, -0.9, 0, -1, -0.9, 0.07, 1, -0.9, 0, 1, -1, 0.07, 1, -1, 0.07, 1, -0.9, 0, 1, -1, 0, 1, 0.9, 0.07, -1, 0.9, 0, -1, 1, 0.07, -1, 1, 0.07, -1, 0.9, 0, -1, 1, 0, -1, -0.9, 0.07, 1, -1, 0.07, 1, -0.93, 0.1, 1, -0.93, 0.1, 1, -1, 0.07, 1, -1, 0.1, 1, -1, 0.1, -1, -0.93, 0.1, -1, -1, 0.1, 1, -1, 0.1, 1, -0.93, 0.1, -1, -0.93, 0.1, 1, 1, 0.07, -1, 1, 0.07, 1, 1, 0.1, -1, 1, 0.1, -1, 1, 0.07, 1, 1, 0.1, 1, 0.9, 0.07, 1, 0.9, 0.07, -1, 0.93, 0.1, 1, 0.93, 0.1, 1, 0.9, 0.07, -1, 0.93, 0.1, -1, -1, 0.07, 1, -1, 0.07, -1, -1, 0.1, 1, -1, 0.1, 1, -1, 0.07, -1, -1, 0.1, -1, 1, 0.1, 1, 1, 0.07, 1, 0.93, 0.1, 1, 0.93, 0.1, 1, 1, 0.07, 1, 0.9, 0.07, 1, 0.9, 0.07, -1, 0.9, 0.07, 1, -0.9, 0.07, -1, -0.9, 0.07, -1, 0.9, 0.07, 1, -0.9, 0.07, 1, 0.02, 0.073, -0.9, 0.02, 0.073, -0.7, -0.02, 0.073, -0.9, -0.02, 0.073, -0.9, 0.02, 0.073, -0.7, -0.02, 0.073, -0.7, -0.58, 0.073, -1, -0.58, 0.073, 1, -0.62, 0.073, -1, -0.62, 0.073, -1, -0.58, 0.073, 1, -0.62, 0.073, 1, 0.62, 0.073, -1, 0.62, 0.073, 1, 0.58, 0.073, -1, 0.58, 0.073, -1, 0.62, 0.073, 1, 0.58, 0.073, 1, 0.02, 0.073, -0.5, 0.02, 0.073, -0.3, -0.02, 0.073, -0.5, -0.02, 0.073, -0.5, 0.02, 0.073, -0.3, -0.02, 0.073, -0.3, 0.02, 0.073, -0.1, 0.02, 0.073, 0.1, -0.02, 0.073, -0.1, -0.02, 0.073, -0.1, 0.02, 0.073, 0.1, -0.02, 0.073, 0.1, 0.02, 0.073, 0.3, 0.02, 0.073, 0.5, -0.02, 0.073, 0.3, -0.02, 0.073, 0.3, 0.02, 0.073, 0.5, -0.02, 0.073, 0.5, 0.02, 0.073, 0.7, 0.02, 0.073, 0.9, -0.02, 0.073, 0.7, -0.02, 0.073, 0.7, 0.02, 0.073, 0.9, -0.02, 0.073, 0.9)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7g24n"]
-size = Vector3(10, 13.6987, 10)
+size = Vector3(12.4629, 8.843, 10)
 
 [sub_resource type="Animation" id="Animation_kkjt7"]
 resource_name = "AlleyEnter"
-length = 5.0
+length = 15.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -99,10 +99,34 @@ tracks/0/path = NodePath("WorldEnvironment/FogVolume:material:density")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.3, 4.9),
+"times": PackedFloat32Array(0, 4.9),
+"transitions": PackedFloat32Array(1, 5.09824),
+"update": 0,
+"values": [1.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WorldEnvironment:environment:volumetric_fog_density")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [5.0, 0.0]
+"values": [0.0, 0.05]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lights/DirectionalLight3D:light_energy")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4.8, 14.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.036, 2.036]
 }
 
 [sub_resource type="Animation" id="Animation_wgu8s"]
@@ -119,6 +143,30 @@ tracks/0/keys = {
 "update": 0,
 "values": [5.0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WorldEnvironment:environment:volumetric_fog_density")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.05]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lights/DirectionalLight3D:light_energy")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.036]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x5w0u"]
 _data = {
@@ -127,15 +175,14 @@ _data = {
 }
 
 [node name="City" type="Node3D"]
-script = ExtResource("1_ybrxe")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_y1rgw")
 camera_attributes = SubResource("CameraAttributesPractical_6v2wv")
 
 [node name="FogVolume" type="FogVolume" parent="WorldEnvironment"]
-transform = Transform3D(0.999872, 0, -0.0160214, 0, 1, 0, 0.0160214, 0, 0.999872, -3.52469, 4.11293, 0)
-size = Vector3(6.41317, 4.29472, 8.16059)
+transform = Transform3D(0.999872, 0, -0.0160214, 0, 1, 0, 0.0160214, 0, 0.999872, -9.01002, 7.80174, 0)
+size = Vector3(14.2007, 17.617, 8.16059)
 material = SubResource("FogMaterial_ocdta")
 
 [node name="Alley" type="Node3D" parent="."]
@@ -294,17 +341,19 @@ omni_attenuation = 0.574349
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights"]
 transform = Transform3D(1, 0, 0, 0, -0.611472, 0.791266, 0, -0.791266, -0.611472, -39.252, 13.9516, 0)
 light_color = Color(0.572549, 0.564706, 1, 1)
-light_energy = 0.1
+light_energy = 2.036
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="EntranceArea" type="Area3D" parent="."]
+script = ExtResource("12_ogxa5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57077, 2.68145, -0.0724046)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EntranceArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26406, 4.6573, -0.0724046)
 shape = SubResource("BoxShape3D_7g24n")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EntranceArea"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_x5w0u")
 }
 
-[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="EntranceArea" to="EntranceArea" method="_on_body_entered"]
