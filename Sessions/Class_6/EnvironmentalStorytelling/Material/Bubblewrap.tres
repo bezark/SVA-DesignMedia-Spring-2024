@@ -1,0 +1,38 @@
+[gd_resource type="StandardMaterial3D" load_steps=8 format=3 uid="uid://qogsrsfuqi5g"]
+
+[ext_resource type="Texture2D" uid="uid://bafgjaiyuo6e4" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_basecolor.jpg" id="1_dx0ca"]
+[ext_resource type="Texture2D" uid="uid://de0p1ra4k27ix" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_ambientocclusion.jpg" id="2_dag64"]
+[ext_resource type="Texture2D" uid="uid://consgjm6ary7n" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_height.jpg" id="3_aitfm"]
+[ext_resource type="Texture2D" uid="uid://bmjlqnjv8mvgc" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_metallic.jpg" id="4_qj3wk"]
+[ext_resource type="Texture2D" uid="uid://cg4no52vj6wpi" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_normal.jpg" id="5_nqgh0"]
+[ext_resource type="Texture2D" uid="uid://y7g5kf5yf27u" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_roughness.jpg" id="6_x08rs"]
+[ext_resource type="Texture2D" uid="uid://dfmixp3wfbuvw" path="res://Textures/4k JPEG/Plastic_BubbleWrap_01/Plastic_BubbleWrap_01_glossiness.jpg" id="7_x3wrt"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.843137, 0.968627, 0.984314, 1)
+albedo_texture = ExtResource("1_dx0ca")
+metallic = 1.0
+metallic_specular = 1.0
+metallic_texture = ExtResource("4_qj3wk")
+roughness_texture = ExtResource("6_x08rs")
+normal_enabled = true
+normal_texture = ExtResource("5_nqgh0")
+rim_enabled = true
+rim_tint = 0.05
+clearcoat_enabled = true
+clearcoat_roughness = 0.43
+ao_enabled = true
+ao_texture = ExtResource("2_dag64")
+heightmap_enabled = true
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("3_aitfm")
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 1.0
+subsurf_scatter_texture = ExtResource("7_x3wrt")
+uv1_triplanar = true
+texture_filter = 0

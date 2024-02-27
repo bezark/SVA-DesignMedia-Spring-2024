@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bha0xopbuktjj"]
+
+[ext_resource type="Material" uid="uid://bt4ybnybn07lx" path="res://Material/Red Rubber.tres" id="1_perxa"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.294724, 0.262231, 1.32407)
+material_override = ExtResource("1_perxa")
+size = Vector3(3.41125, 1, 2.97937)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.801337, 0.598213, 0, -0.598213, 0.801337, 0, 1.46347, 2.72009)

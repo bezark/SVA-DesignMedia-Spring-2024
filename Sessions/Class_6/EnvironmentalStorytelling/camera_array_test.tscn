@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmivvogh0abb4"]
+
+[ext_resource type="PackedScene" uid="uid://cxn8pc533eatv" path="res://array_loop_demo.tscn" id="1_53osr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="ArrayLoopDemo" parent="." instance=ExtResource("1_53osr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17277, -7.01441)
+threshhold = 1
+
+[node name="ArrayLoopDemo2" parent="." instance=ExtResource("1_53osr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.01441)
+
+[node name="ArrayLoopDemo3" parent="." instance=ExtResource("1_53osr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9694, -7.01441)
+threshhold = 500

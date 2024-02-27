@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://ccpvh7jjwx2kj"]
+[gd_scene load_steps=36 format=3 uid="uid://ccpvh7jjwx2kj"]
 
 [ext_resource type="ArrayMesh" uid="uid://cxukornkd51ow" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_A.obj" id="1_15wof"]
 [ext_resource type="ArrayMesh" uid="uid://ckc65rks05y75" path="res://addons/kaykit_city_builder_bits/Assets/obj/building_E.obj" id="2_1tdsr"]
@@ -10,12 +10,15 @@
 [ext_resource type="ArrayMesh" uid="uid://3chv1f32d4js" path="res://addons/kaykit_city_builder_bits/Assets/obj/dumpster.obj" id="8_g6yn5"]
 [ext_resource type="ArrayMesh" uid="uid://uatvdp23myek" path="res://addons/kaykit_city_builder_bits/Assets/obj/road_straight.obj" id="9_ycg32"]
 [ext_resource type="PackedScene" uid="uid://dw2e4tbpdyi41" path="res://City/streetlight.tscn" id="10_c6pvr"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="10_wdtgr"]
+[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://player.tscn" id="10_wdtgr"]
 [ext_resource type="Script" path="res://City/EntranceArea.gd" id="12_ogxa5"]
+[ext_resource type="AudioStream" uid="uid://dmgs6itowbmbq" path="res://Sounds/ambience - air conditioner.wav" id="13_elwmu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vl1yh"]
 sky_top_color = Color(0.00784314, 0.0235294, 0.109804, 1)
 sky_horizon_color = Color(0.0941176, 0.0627451, 0.0980392, 1)
+sky_energy_multiplier = 0.32
+sky_cover_modulate = Color(0.0784314, 0.0784314, 0.0784314, 1)
 ground_bottom_color = Color(0.129412, 0.0941176, 0.0862745, 1)
 ground_horizon_color = Color(0.0862745, 0.0431373, 0.0705882, 1)
 sun_angle_max = 0.0
@@ -356,4 +359,14 @@ libraries = {
 "": SubResource("AnimationLibrary_x5w0u")
 }
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27823, 4.33798, -0.618207)
+stream = ExtResource("13_elwmu")
+pitch_scale = 2.44
+autoplay = true
+
+[node name="Timer" type="Timer" parent="AudioStreamPlayer3D"]
+wait_time = 5.0
+
 [connection signal="body_entered" from="EntranceArea" to="EntranceArea" method="_on_body_entered"]
+[connection signal="timeout" from="AudioStreamPlayer3D/Timer" to="EntranceArea" method="_on_timer_timeout"]

@@ -15,6 +15,7 @@ func _process(delta):
 
 
 
+@onready var audio_stream_player_3d = $"../AudioStreamPlayer3D"
 
 func _on_body_entered(body):
 	print(body)
@@ -22,3 +23,8 @@ func _on_body_entered(body):
 		print("starting")
 		sceneStarted = true
 		animation_player.play("AlleyEnter")
+		audio_stream_player_3d.pitch_scale= 10.
+		$"../AudioStreamPlayer3D/Timer".start()
+
+func _on_timer_timeout():
+	audio_stream_player_3d.stop()

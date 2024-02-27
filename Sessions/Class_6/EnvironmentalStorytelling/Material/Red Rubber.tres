@@ -1,0 +1,29 @@
+[gd_resource type="StandardMaterial3D" load_steps=9 format=3 uid="uid://bt4ybnybn07lx"]
+
+[ext_resource type="Texture2D" uid="uid://b4lwqjogb672h" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_basecolor.jpg" id="1_riate"]
+[ext_resource type="Texture2D" uid="uid://h4se5qlfft4q" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_ambientocclusion.jpg" id="2_x27qg"]
+[ext_resource type="Texture2D" uid="uid://cpa3velg31rrj" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_glossiness.jpg" id="3_m1aek"]
+[ext_resource type="Texture2D" uid="uid://ds7owsbo6c3jo" path="res://Textures/Metal/Metal_01-256x256.png" id="4_q6hyf"]
+[ext_resource type="Texture2D" uid="uid://7keeb65f73l3" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_height.jpg" id="5_6suwr"]
+[ext_resource type="Texture2D" uid="uid://1mlqjeeyyioa" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_metallic.jpg" id="6_im1tb"]
+[ext_resource type="Texture2D" uid="uid://dfn3c2tk6ojib" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_normal.jpg" id="7_ficdl"]
+[ext_resource type="Texture2D" uid="uid://dty0jmoymfpdf" path="res://Textures/4k JPEG/Plastic_04/Plastic_04_roughness.jpg" id="8_cqejh"]
+
+[resource]
+albedo_texture = ExtResource("1_riate")
+metallic_texture = ExtResource("6_im1tb")
+roughness_texture = ExtResource("8_cqejh")
+emission = Color(1, 0.419608, 1, 1)
+emission_texture = ExtResource("4_q6hyf")
+normal_enabled = true
+normal_texture = ExtResource("7_ficdl")
+clearcoat_roughness = 0.0
+clearcoat_texture = ExtResource("3_m1aek")
+ao_enabled = true
+ao_texture = ExtResource("2_x27qg")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("5_6suwr")
+subsurf_scatter_strength = 0.6
+uv1_scale = Vector3(10, 10, 10)
+uv2_scale = Vector3(10, 10, 10)
