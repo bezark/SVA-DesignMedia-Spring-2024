@@ -70,11 +70,10 @@ This course is broken up into four major parts, with each part lasting roughly 4
 - **DUE: Lab 2**
 - **Homework: [Reflection 3](Assignments/Reflections/Reflection3_DefineMetaverse.md)**
 - Start Exploring [Christopher Alexander](Resources/Christopher_Alexander/README.md)
-
-
-*Narrative and Storytelling in XR*
-
 [Class Notes](Sessions/Class_4)
+
+
+
 
 
 
@@ -84,22 +83,22 @@ This course is broken up into four major parts, with each part lasting roughly 4
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
 #### *Class 5 2/20: Pattern Languages and Catching Up
-
+[Class Notes](Sessions/Class_5/README.md)
 - **Theme:** Storytelling and narrative techniques in XR.
 - **DUE: Reflection 3**
 - **PROJECT ASSIGNMENT:** [Pattern Exploration and Pattern Language](Assignments/Pattern_Language_Project.md)
+- **Homework: [Lab 3](/Assignments/Labs/Lab_3.md)**
 
 
-#### *Class 6 2/27: Immersion & Environment*
-
+#### *Class 6 2/27: Immersion & Environment/Narrative and Storytelling in XR*
+[Class Notes](Sessions/Class_6/README.md)
 - **Theme:** Creating immersive XR environments.
-- **Lecture:** Crafting compelling narratives in XR spaces.
+- **Lecture:** [Crafting compelling narratives in XR spaces](https://docs.google.com/presentation/d/15XQs10hoVlaxUGuo6hONBR-1INw4MEl3HPVcGNDrHhw/edit?usp=sharing)
 - **Workshop:** Implementing storytelling elements in Godot 4 projects.
 - **Lecture:** Principles of immersive design and world-building in XR.
 - **Workshop:** Designing immersive environments with Blender and  Godot 4.
 
 
-- **Homework: [Lab 3](/Assignments/Labs/Lab_3.md)**
 
 **SPRING BREAK**
 
