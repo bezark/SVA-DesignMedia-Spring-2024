@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1PppSvy2CrtE1D_blhgm1WGI7QUtQ-m3O4HJ6O9yhY4o/edit?usp=sharing
+
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
