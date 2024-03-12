@@ -13,6 +13,7 @@ BREAK 4:45-4:55
   - Animation and Area Triggers
   - Eyecandy:
     - https://github.com/godotengine/godot/issues/74965
+    - 
   - [Photogrametry](https://sketchfab.com/artfletch)
 
 - Project Work 5:30-6:10
