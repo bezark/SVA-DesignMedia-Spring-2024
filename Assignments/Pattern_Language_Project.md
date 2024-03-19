@@ -8,7 +8,7 @@
 
 1. **Identify a Design Pattern:** Choose an XR design challenge and develop a design pattern that offers a solution. This could be related to user interaction, navigation, storytelling, or any other aspect of XR design you find compelling.
 
-2. **Document the Pattern:** Write about your design pattern following the specified structure: Pattern Name, the Context, 2-5 Patterns Nested Inside, the Problem, the Solution and 2-5 Outside Patterns Containing this Pattern.
+2. **Document the Pattern:** Write about your design pattern following the specified structure: Pattern Name, the Context, 1-3 Patterns Nested Inside, the Problem, the Solution and 1-3 Outside Patterns Containing this Pattern.
 
 3. **Prototype in Godot 4:** Using Godot 4 and its XR toolkit, create a prototype or creative exploration that demonstrates your design pattern in action. Your scene should be an immersive experience that allows users to understand and engage with the pattern.
 
