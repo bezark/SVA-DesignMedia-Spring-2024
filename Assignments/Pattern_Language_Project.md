@@ -8,7 +8,7 @@
 
 1. **Identify a Design Pattern:** Choose an XR design challenge and develop a design pattern that offers a solution. This could be related to user interaction, navigation, storytelling, or any other aspect of XR design you find compelling.
 
-2. **Document the Pattern:** Write about your design pattern following the specified structure: Pattern Name, the Context, 2-5 Patterns Nested Inside, the Problem, the Solution and 2-5 Outside Patterns Containing this Pattern.
+2. **Document the Pattern:** Write about your design pattern following the specified structure: Pattern Name, the Context, 1-3 Patterns Nested Inside, the Problem, the Solution and 1-3 Outside Patterns Containing this Pattern.
 
 3. **Prototype in Godot 4:** Using Godot 4 and its XR toolkit, create a prototype or creative exploration that demonstrates your design pattern in action. Your scene should be an immersive experience that allows users to understand and engage with the pattern.
 
@@ -23,10 +23,10 @@ This project is a class wide project. In order to turn it in, you must successfu
    - Comprehensive and insightful documentation following the outlined structure (5 points):
      - Pattern Name: Give the pattern a concise and memorable name.
      - The Context: Under What circumstances does this pattern appear?  (250 Words)
-     - 2-5 Patterns Nested Inside this Pattern: links to other patterns made by students or talked about in class.
+     - 1-3 Patterns Nested Inside this Pattern: links to other patterns made by students or talked about in class.
      - The Problem: What is the main problem this pattern solves? (250 Words)
      - The Solution: 2-3 sentences describing the solution.
-     - 2-5 Outside Patterns Containing this Pattern: links to other patterns made by students or talked about in class.
+     - 1-3 Outside Patterns Containing this Pattern: links to other patterns made by students or talked about in class.
 
 2. **Prototype Implementation (7 points)**
    - The Implementation wants to have 2 different expressions:

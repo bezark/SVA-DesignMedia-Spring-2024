@@ -4,24 +4,7 @@
             "outputFile": "com.godot.game-mergeDebugResources-9:/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\johnb\\Nextcloud2\\4Tinker\\Godot\\XR\\Quest Passthrough Demo\\android\\build\\res\\values-sv\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "73",
-                        "endOffsets": "184"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "76",
-                        "endOffsets": "127"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\johnb\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-sv\\values-sv.xml",
+                    "source": "C:\\Users\\jbezark\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-sv\\values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,6 +18,23 @@
                         "startOffsets": "132",
                         "endColumns": "100",
                         "endOffsets": "228"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jbezark\\Desktop\\SVA-DesignMedia-Spring-2024\\Sessions\\Class_7\\Quest Passthrough Demo\\android\\build\\res\\values-sv\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "73",
+                        "endOffsets": "184"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "76",
+                        "endOffsets": "127"
                     }
                 }
             ]

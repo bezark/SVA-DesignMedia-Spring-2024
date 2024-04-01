@@ -357,9 +357,7 @@ albedo_color = Color(0.4, 0.439216, 1, 0.803922)
 [sub_resource type="SphereShape3D" id="SphereShape3D_lj7jk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6qn2u"]
-transparency = 1
-blend_mode = 1
-albedo_color = Color(1, 1, 0.215686, 0.709804)
+albedo_color = Color(0.113725, 0.490196, 0.509804, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_ctyug"]
 material = SubResource("StandardMaterial3D_6qn2u")

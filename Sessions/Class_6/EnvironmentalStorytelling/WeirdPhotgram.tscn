@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5w65vb1i0sxg"]
+
+[ext_resource type="PackedScene" uid="uid://c3audoko2iojf" path="res://photogrametry/the_charterhouse_great_chamber.glb" id="1_kha3y"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_kha3y")]
+
+[node name="Object_4" parent="Sketchfab_model/CharterhouseGreatChamber02_obj_cleaner_materialmerger_gles" index="2"]
+transform = Transform3D(1, 2.64698e-23, 2.23517e-08, 0, 1, 1.05879e-22, -2.23517e-08, 0, 1, 0.243879, -0.90234, -0.0250568)
+
+[node name="Object_5" parent="Sketchfab_model/CharterhouseGreatChamber02_obj_cleaner_materialmerger_gles" index="3"]
+transform = Transform3D(1, 1.32349e-23, 7.45058e-09, 0, 1, 5.29396e-23, -7.45058e-09, 0, 1, -0.563148, 0, 0.0578594)
+
+[node name="Object_6" parent="Sketchfab_model/CharterhouseGreatChamber02_obj_cleaner_materialmerger_gles" index="4"]
+transform = Transform3D(1, 2.64698e-23, 2.23517e-08, 0, 1, 1.05879e-22, -2.23517e-08, 0, 1, -0.668641, 0.664057, 0.0686979)
+
+[node name="Object_7" parent="Sketchfab_model/CharterhouseGreatChamber02_obj_cleaner_materialmerger_gles" index="5"]
+transform = Transform3D(1, 1.32349e-23, 7.45058e-09, 0, 1, 5.29396e-23, -7.45058e-09, 0, 1, -1.73779, 0, 0.758901)
