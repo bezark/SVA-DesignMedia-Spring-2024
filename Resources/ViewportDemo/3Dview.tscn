@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://cww7utndbl6gs"]
+
+[ext_resource type="PackedScene" uid="uid://7cr6pn1wua6a" path="res://2dview.tscn" id="1_f0ji8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wcgo7"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_smjl8"]
+sky_material = SubResource("ProceduralSkyMaterial_wcgo7")
+
+[sub_resource type="Environment" id="Environment_6t6ke"]
+background_mode = 2
+sky = SubResource("Sky_smjl8")
+tonemap_mode = 2
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_63xam"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6t6ke")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+
+[node name="Node2D" parent="SubViewport" instance=ExtResource("1_f0ji8")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0553684, 0, -0.998466, 0, 1, 0, 0.998466, 0, 0.0553684, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+texture = SubResource("ViewportTexture_63xam")

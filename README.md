@@ -25,12 +25,12 @@ By the end of this course, students will be able to:
 
 # **Course Structure**
 
-This course is broken up into four major parts, with each part lasting roughly 4 weeks. The sections are:
+This course is broken up into 3 major parts. The sections are:
 
 - Foundations
 - Patterns
 - Visions
-- Applications
+
 
 ## Part 1: Foundations
 
@@ -109,21 +109,35 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Workshop:** Building UI/UX components in Godot 4.
 
 
-#### *Class 9 3/26: Extension and Context*
-
-- **Theme:** AR, Context awareness and history
-- **Lecture:** History, Geography, Continuity
-- **Workshop:** WebXR, Save Data and APIs
-- **DUE: Pattern Explorations**
+#### *Class 9 3/26: Working Time*
 
 
 ## Part 3: Visions
 
-*This section is under construction... stay tuned...*
+#### *Class 10 4/2: Looking Backwards and Forwards*
+- Reviewing Pattern Language 3:20-4:00
+- Final Project Assignment 4:00 -4:10
+- [Futures Thinking Workshop](Sessions/Futures_Workshop.md) 4:10-6:10
 
-#### *Class 10 4/2: Presentations*
+#### *Class 10 4/9: Extension and Context*
 
-- Vision Presentations
+- **Theme:** AR, Context awareness and history
+- **Lecture:** History, Geography, Continuity
+- **Workshop:**  Save Data and APIs
+- **DUE: Pattern Explorations**
+
+#### *Class 10 4/16:*
+- Avatars and Motion
+- Ready Player Me
+- XR Annimator
+
+#### *Class 10 4/23:*
+
+
+#### *Class 10 4/30:*
+- Capstone Project Presentations
+
+
 
 ## Part 4: Applications
 
