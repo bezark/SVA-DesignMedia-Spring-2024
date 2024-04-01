@@ -116,7 +116,7 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 #### *Class 10 4/2: Looking Backwards and Forwards*
 - Reviewing Pattern Language 3:20-4:00
-- Final Project Assignment 4:00 -4:10
+- **Project Assignment:** [Capstone Project](Assignments/Capstone Project.md) 4:00 -4:10
 - [Futures Thinking Workshop](Sessions/Futures_Workshop.md) 4:10-6:10
 
 #### *Class 10 4/9: Extension and Context*
