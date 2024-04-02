@@ -1,5 +1,7 @@
 # Imagining the Future of the Metaverse
 
+[Slides](https://docs.google.com/presentation/d/1bNlYAuYKitIhwcmzb7TS_uDc2SXPRUnSsnBoKLh48yM/edit?usp=sharing)
+
 Total Time: 120 minutes
 
 ## Introduction to Futures Thinking and the Metaverse (20 minutes)
