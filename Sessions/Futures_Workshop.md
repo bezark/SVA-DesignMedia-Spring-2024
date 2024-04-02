@@ -10,18 +10,18 @@ Total Time: 120 minutes
 - Key Trends and Technologies (15 minutes)
     - Present current trends in technology, social behavior, and digital economies that might influence the metaverse's development. Include brief discussions on VR, AR, blockchain, digital identity, and online communities.
 
-  - Futures Cone
-  - Driving Forces
-  - Upstream
-  - What are Upstream Driving Forces pushing us towards the metaverse?
+- Futures Cone
+- Driving Forces
+- Upstream
+- What are Upstream Driving Forces pushing us towards the metaverse?
 
 
 
 ## [Investing in Futures Workshop](https://investing-in-futures.onrender.com/) 40
 
-  - Split into 3-4 groups
-  - Use a white board to start imagining a world.
-  - One person should be a scribe
+- Split into 3-4 groups
+- Use a white board to start imagining a world.
+- One person should be a scribe
 
 
   ### IMAGINE 20 Mins
