@@ -51,14 +51,14 @@ Break (10 minutes)
 
 ## Prototyping the Future Metaverse (40 minutes)
 
-    30 Mins to work together to make a prototype in Godot
-    Split up the work
-    Prototype Showcase (10 minutes)
-    Each group presents their prototype, explaining how it fits into their imagined metaverse scenario and the thought process behind its development.
+  30 Mins to work together to make a prototype in Godot
+  Split up the work
+  Prototype Showcase (10 minutes)
+  Each group presents their prototype, explaining how it fits into their imagined metaverse scenario and the thought process behind its development.
 
 ## Reflection and Conclusion (10 minutes)
 
-    Group Reflection (5 minutes)
-        Reflect on the process of imagining and prototyping futures. Discuss the value of thinking about long-term implications and the role of creative thinking in technology design.
-    Closing Remarks (5 minutes)
-        Summarize key insights from the workshop. Encourage students to continue exploring the possibilities of the metaverse and futures thinking in their work and studies.
+  Group Reflection (5 minutes)
+      Reflect on the process of imagining and prototyping futures. Discuss the value of thinking about long-term implications and the role of creative thinking in technology design.
+  Closing Remarks (5 minutes)
+      Summarize key insights from the workshop. Encourage students to continue exploring the possibilities of the metaverse and futures thinking in their work and studies.
