@@ -1,6 +1,10 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
+- https://investing-in-futures.onrender.com/
+- https://www.tldraw.com/r/ZlgZVxBztQXsC0cavT1jB?v=0,0,1920,1115&p=page
+
+  
 - [Futures Thinking Workshop](Sessions/Futures_Workshop.md)
 - **Project Assignment:** [Capstone Project](Assignments/Capstone_Project.md)
 
