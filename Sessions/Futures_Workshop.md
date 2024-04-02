@@ -5,10 +5,10 @@
 Total Time: 120 minutes
 
 ## Introduction to Futures Thinking and the Metaverse (20 minutes)
-    - Overview and Objectives (5 minutes)
-      - Briefly explain the purpose of the workshop, introduce futures thinking, and define the metaverse concept.
-    - Key Trends and Technologies (15 minutes)
-        - Present current trends in technology, social behavior, and digital economies that might influence the metaverse's development. Include brief discussions on VR, AR, blockchain, digital identity, and online communities.
+- Overview and Objectives (5 minutes)
+  - Briefly explain the purpose of the workshop, introduce futures thinking, and define the metaverse concept.
+- Key Trends and Technologies (15 minutes)
+    - Present current trends in technology, social behavior, and digital economies that might influence the metaverse's development. Include brief discussions on VR, AR, blockchain, digital identity, and online communities.
 
   - Futures Cone
   - Driving Forces
