@@ -35,7 +35,7 @@ Total Time: 120 minutes
     - Feel Like
     - Taste Like
     - Smell Like
-  - How are deciiscions made in this world? Who decides important things?
+  - How are deciscions made in this world? Who decides important things?
   - How does this society address challenges?
   - What threatens this future?
 
