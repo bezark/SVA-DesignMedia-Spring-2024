@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsq55lpkk2vvu"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_6fg6l"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0dby4"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_q47tl"]
+sky_material = SubResource("ProceduralSkyMaterial_0dby4")
+
+[sub_resource type="Environment" id="Environment_d7l6i"]
+background_mode = 1
+background_color = Color(0, 0.388235, 1, 0)
+sky = SubResource("Sky_q47tl")
+tonemap_mode = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_25rfi"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_6fg6l")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_d7l6i")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+tracker = &"left_hand"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
+mesh = SubResource("BoxMesh_25rfi")
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+tracker = &"right_hand"
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="XROrigin3D/RightController"]
+mesh = SubResource("BoxMesh_25rfi")
+skeleton = NodePath("../../LeftController")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EnterXR
+"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2, 0)
