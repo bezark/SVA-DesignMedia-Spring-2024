@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://yng5nw8chfbc"]
+
+[ext_resource type="Texture2D" uid="uid://cjhbfjrw2cook" path="res://noismatbw.tres" id="1_5vra7"]
+[ext_resource type="Texture2D" uid="uid://bmlkvgqk07p18" path="res://noismat.tres" id="1_cfc32"]
+[ext_resource type="Script" path="res://ballMover.gd" id="1_yc0tk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4amvk"]
+transparency = 1
+albedo_color = Color(0.482353, 0.141176, 0.584314, 0.509804)
+metallic = 1.0
+roughness_texture = ExtResource("1_5vra7")
+emission_enabled = true
+emission = Color(0.74902, 0.364706, 0.411765, 1)
+emission_energy_multiplier = 0.0
+emission_texture = ExtResource("1_5vra7")
+normal_enabled = true
+normal_texture = ExtResource("1_cfc32")
+clearcoat_enabled = true
+clearcoat_texture = ExtResource("1_5vra7")
+ao_enabled = true
+heightmap_enabled = true
+heightmap_texture = ExtResource("1_5vra7")
+subsurf_scatter_enabled = true
+subsurf_scatter_skin_mode = true
+
+[node name="Ball" type="Node3D"]
+script = ExtResource("1_yc0tk")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+radius = 0.074
+radial_segments = 64
+rings = 64
+material = SubResource("StandardMaterial3D_4amvk")

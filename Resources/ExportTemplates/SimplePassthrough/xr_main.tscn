@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://baoxatx4qp2oj"]
+
+[ext_resource type="Script" path="res://xr_main.gd" id="1_8r70k"]
+
+[sub_resource type="Environment" id="Environment_8nf3d"]
+background_mode = 1
+background_color = Color(0, 0, 0, 0)
+
+[node name="XRMain" type="Node3D"]
+script = ExtResource("1_8r70k")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8nf3d")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="Left" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="Right" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.72826)
