@@ -1,11 +1,7 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
-- https://investing-in-futures.onrender.com/
-- https://www.tldraw.com/r/ZlgZVxBztQXsC0cavT1jB?v=0,0,1920,1115&p=page
-
-  
-- [Futures Thinking Workshop](Sessions/Futures_Workshop.md)
+- [itch.io](https://itch.io)
 - **Project Assignment:** [Capstone Project](Assignments/Capstone_Project.md)
 
 # **Course Overview**
@@ -111,7 +107,7 @@ In this section, lectures and workshops focus on understanding and implementing 
 - **Theme:** UI/UX design in XR.
 - **Lecture:** Designing intuitive interfaces and seamless user experiences in XR.
 - **Workshop:** Building UI/UX components in Godot 4.
-
+- **DUE: Pattern Explorations**
 
 #### *Class 9 3/26: Working Time*
 
@@ -124,11 +120,9 @@ In this section, lectures and workshops focus on understanding and implementing 
 - [Futures Thinking Workshop](Sessions/Futures_Workshop.md) 4:10-6:10
 
 #### *Class 10 4/9: Extension and Context*
-
-- **Theme:** AR, Context awareness and history
-- **Lecture:** History, Geography, Continuity
-- **Workshop:**  Save Data and APIs
-- **DUE: Pattern Explorations**
+- Coding Refresher
+- Exporting and WebXR
+- Terrains and Environments with plugins
 
 #### *Class 10 4/16:*
 - Avatars and Motion

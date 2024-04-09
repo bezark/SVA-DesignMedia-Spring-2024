@@ -12,7 +12,7 @@ sky_material = SubResource("ProceduralSkyMaterial_0dby4")
 
 [sub_resource type="Environment" id="Environment_d7l6i"]
 background_mode = 1
-background_color = Color(0, 0.143815, 0, 0)
+background_color = Color(0.368627, 0.101961, 0.262745, 0)
 sky = SubResource("Sky_q47tl")
 tonemap_mode = 2
 
@@ -64,6 +64,5 @@ script = ExtResource("2_33gjd")
 
 [node name="Label3D" type="Label3D" parent="BallSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.972275, -0.966144)
-text = "HI"
 
 [connection signal="button_released" from="XROrigin3D/LeftController" to="BallSpawner" method="_on_left_controller_button_released"]
