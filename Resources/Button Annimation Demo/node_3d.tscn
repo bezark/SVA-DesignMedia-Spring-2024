@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://g3dgmk2ur7pr"]
+
+[ext_resource type="Script" path="res://Exploder.gd" id="1_cx5t0"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tyt48"]
+emission_shape_scale = Vector3(5, 5, 5)
+emission_shape = 1
+emission_sphere_radius = 1.0
+spread = 96.04
+flatness = 0.244
+initial_velocity_min = 75.61
+initial_velocity_max = 141.78
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_s8hi6"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0twx1"]
+noise = SubResource("FastNoiseLite_s8hi6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxmhe"]
+transparency = 1
+albedo_color = Color(1, 0.32549, 0.207843, 0.756863)
+emission_enabled = true
+emission = Color(0.458824, 0.458824, 0.458824, 1)
+ao_enabled = true
+ao_light_affect = 0.43
+ao_texture = SubResource("NoiseTexture2D_0twx1")
+
+[sub_resource type="SphereMesh" id="SphereMesh_0w3p3"]
+material = SubResource("StandardMaterial3D_pxmhe")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_cx5t0")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(0.985173, 0, 0.0283211, 0, 1, 0, -0.0330947, 0, 0.843071, -2.0012, 1.25629, 0)
+visible = false
+visibility_aabb = AABB(-4.10449, -4, -4, 8, 8, 8)
+process_material = SubResource("ParticleProcessMaterial_tyt48")
+draw_pass_1 = SubResource("SphereMesh_0w3p3")
+
+[node name="Box" type="CSGBox3D" parent="."]
+transform = Transform3D(1.45761, 0, 0, 0, 5.5252, 0, 0, 0, 1.45761, -0.431791, 1.53599, -1.1543)
+use_collision = true
+size = Vector3(7.73438, 1.81042, 14.6016)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.195164, 0, 53.9391)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

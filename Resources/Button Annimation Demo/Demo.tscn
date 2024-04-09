@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckd2u0mmjtg8l"]
+
+[ext_resource type="Script" path="res://Demo.gd" id="1_btdir"]
+
+[sub_resource type="Animation" id="Animation_hnvva"]
+resource_name = "move"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CSGBox3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -2.58727)]
+}
+
+[sub_resource type="Animation" id="Animation_ktvv3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CSGBox3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_67ic0"]
+_data = {
+"RESET": SubResource("Animation_ktvv3"),
+"move": SubResource("Animation_hnvva")
+}
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_btdir")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.45446)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_67ic0")
+}
+
+[node name="Button" type="Button" parent="."]
+offset_right = 257.0
+offset_bottom = 90.0
+text = "Press me!"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
