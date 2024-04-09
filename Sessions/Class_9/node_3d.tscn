@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://dpu5w7738ukpi"]
+
+[ext_resource type="Script" path="res://CSGSphere3D.gd" id="1_7tkkv"]
+[ext_resource type="Script" path="res://node_3d.gd" id="1_ghusr"]
+[ext_resource type="PackedScene" uid="uid://dp0rdw2q8q5c0" path="res://button.tscn" id="2_2knmh"]
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="4_70f7l"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_btea1"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_wmv0a"]
+sky_material = SubResource("ProceduralSkyMaterial_btea1")
+
+[sub_resource type="Environment" id="Environment_v1ja2"]
+background_mode = 2
+sky = SubResource("Sky_wmv0a")
+tonemap_mode = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w0ph0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_g7wfu"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_ghusr")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_v1ja2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Button" parent="." instance=ExtResource("2_2knmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.198402, -0.955874)
+
+[node name="Button2" parent="." instance=ExtResource("2_2knmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.198402, -10.5099)
+
+[node name="Button3" parent="." instance=ExtResource("2_2knmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.198402, -19.3685)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.09922)
+script = ExtResource("1_7tkkv")
+size = 10
+
+[node name="child" type="Node3D" parent="CSGSphere3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.43994, -0.873529, -9.65771)
+use_collision = true
+size = Vector3(14.8799, 1, 29.3154)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.825297, 3.0067)
+script = ExtResource("4_70f7l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_w0ph0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+mesh = SubResource("CapsuleMesh_g7wfu")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.950266, 0.311439, 0, -0.311439, 0.950266, 0, 2.21228, 1.49281)
