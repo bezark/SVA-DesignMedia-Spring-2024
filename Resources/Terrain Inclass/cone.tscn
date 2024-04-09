@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://vutwrq51ilgg"]
+
+[node name="Cone" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+cone = true

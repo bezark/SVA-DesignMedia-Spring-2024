@@ -12,7 +12,7 @@ sky_material = SubResource("ProceduralSkyMaterial_0dby4")
 
 [sub_resource type="Environment" id="Environment_d7l6i"]
 background_mode = 1
-background_color = Color(0.368627, 0.101961, 0.262745, 0)
+background_color = Color(0.054902, 0.247059, 0.294118, 0)
 sky = SubResource("Sky_q47tl")
 tonemap_mode = 2
 
