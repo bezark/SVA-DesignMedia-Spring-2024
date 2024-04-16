@@ -1,9 +1,8 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
+- [Capstone Check-In Exercise](https://docs.google.com/presentation/d/1Iv4bi61YCCIdNVx9zyflELZS9SIMXKuXlk4n5JFyq2Y/edit?usp=drivesdk)
 - [VIDEOS](https://www.youtube.com/@johnbezark2730/videos)
-
-- **FIX CAPSTONE GRADING**
 - [itch.io](https://itch.io)
 - **Project Assignment:** [Capstone Project](Assignments/Capstone_Project.md)
 
