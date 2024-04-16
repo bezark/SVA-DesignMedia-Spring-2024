@@ -16,7 +16,7 @@ config/description="
 <script>
 var layersPolyfill = new WebXRLayersPolyfill();
 </script>	"
-run/main_scene="res://main.tscn"
+run/main_scene="res://ARmain.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
