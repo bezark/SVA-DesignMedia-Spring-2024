@@ -19,7 +19,7 @@ func save_game():
 	var saveData =SaveData.new()
 	saveData.position = $CharacterBody2D.position
 	ResourceSaver.save(saveData, "res://Resources/savedata.tres") #change to user:// when exporting
-
+	
 func quit():
 	print("bye")
 	save_game()

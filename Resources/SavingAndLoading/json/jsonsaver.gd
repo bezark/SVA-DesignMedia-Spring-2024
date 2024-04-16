@@ -13,14 +13,26 @@ func _process(delta):
 
 func load_game():
 	var data = FileAccess.open("user://save.json", FileAccess.READ)
-	print(data.get_var())
+	if data:
+		var json = JSON.new()
+		json.parse(data.get_as_text())
+		var json_data = json.data
+		print(json_data)
+		$CharacterBody3D.position = Vector3(json_data.position.x,json_data.position.y,json_data.position.z)
 	
 
 func save_game():
 	var file = FileAccess.open("user://save.json", FileAccess.WRITE)
-	file.store_var($CharacterBody3D.position)
+	var position_data = {
+		"x": $CharacterBody3D.position.x,
+		"y": $CharacterBody3D.position.y,
+		"z": $CharacterBody3D.position.z
+	}
+	var data = {"position": position_data}
+	var json_data = JSON.stringify(data)
+	file.store_string(json_data)
 
 func quit():
-	print("bye")
+	
 	save_game()
 	get_tree().quit()
