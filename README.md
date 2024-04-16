@@ -128,9 +128,11 @@ In this section, lectures and workshops focus on understanding and implementing 
 - Terrains and Environments with plugins
 
 #### *Class 10 4/16:*
-- Avatars and Motion
-- Ready Player Me
-- XR Annimator
+ - Project Development Discussion
+   - Prep time: 20 Minutes
+   - "I like...", "I wish...", and "What If..."
+ - [Saving and Loading](Resources/SavingAndLoading)
+ - [APIs](Resources/APIs)
 
 #### *Class 10 4/23:*
 
@@ -139,17 +141,6 @@ In this section, lectures and workshops focus on understanding and implementing 
 - Capstone Project Presentations
 
 
-
-## Part 4: Applications
-
-#### *Class 11-12: Capstone Project Development and Presentation*
-
-- **Project Development:** Finalizing XR projects.
-- **Final Presentation:** Showcasing capstone projects
-
-#### *Class 13&14 4/23: Presentations and Wrap Up*
-
-- **DUE:** Capstone Project
 
 # **Assessment**
 

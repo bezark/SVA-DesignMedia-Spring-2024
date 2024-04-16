@@ -43,6 +43,7 @@ Choosing this option will allow you to revise and expand an existing assignment 
 #### Deployment to Headset (Up to 5 points)
 - **Successful Deployment (5 points):** Demonstrating functionality and improvements on an XR headset.
 
+---
 ### Option 2: Creating a Speculative Future World or Environment (Total: 30 Points)
 
 #### Godot Project (15 points)
@@ -57,39 +58,3 @@ Choosing this option will allow you to revise and expand an existing assignment 
 
 #### Deployment to Headset (Up to 5 points)
 - **Successful Deployment (5 points):** Successful deployment of the speculative world to an XR headset, showcasing functionality and user experience.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Godot Project (15 points)
-- **Innovation and Creativity (5 points):** Originality of the concept and creative use of XR technologies.
-- **Technical Execution (5 points):** Complexity, functionality, and polish of the Godot project. Seamless user interaction and absence of significant bugs.
-- **Immersive Experience (5 points):** Effectiveness in creating an engaging and immersive XR environment. Quality of visual and audio elements.
-
-#### Written Documentation (10 points)
-- **Clarity and Depth (5 points):** Clear presentation of the project concept, design process, and technical insights. Depth of reflection on the development experience and learning outcomes.
-- **Organization and Presentation (5 points):** Well-organized documentation with logical structure, supported by visuals/diagrams where applicable. Professional presentation and adherence to formatting guidelines.
-
-#### Bonus: Deployment to Headset (Up to 5 points)
-- **Successful Deployment (3 points):** Successful deployment of the project to an XR headset, demonstrating functionality and user experience in an immersive environment.
-- **User Experience on Headset (2 points):** Quality of the user experience when interacting with the project through the headset. Includes considerations for comfort, accessibility, and engagement.
-
-#### Additional Notes
-- Creativity and exploration are highly encouraged in this capstone project. While technical excellence is important, the innovative application of XR technologies and the creation of meaningful user experiences will be highly valued.
-- Projects will be evaluated not just on their final output but also on the process undertaken to achieve that output. Documentation of challenges faced and how they were overcome is an essential part of this evaluation.
