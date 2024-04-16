@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1pyo0icek7k0"]
+
+[ext_resource type="Script" path="res://Node3D.gd" id="1_6a6mk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n0hu8"]
+
+[sub_resource type="PointMesh" id="PointMesh_ry5oc"]
+material = SubResource("StandardMaterial3D_n0hu8")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_6a6mk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PointMesh_ry5oc")

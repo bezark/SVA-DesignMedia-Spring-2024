@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctrew05138tpa"]
+
+[ext_resource type="Script" path="res://NASA_Image/NasaHTTPRequest.gd" id="1_f6i3q"]
+[ext_resource type="Script" path="res://NASA_Image/ImageDownload.gd" id="2_n8rpe"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource("1_f6i3q")
+
+[node name="ImageDownload" type="HTTPRequest" parent="HTTPRequest"]
+script = ExtResource("2_n8rpe")
+
+[node name="Sprite3D" type="Sprite3D" parent="HTTPRequest/ImageDownload"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.728419, 0, -0.685132, 0, 1, 0, 0.685132, 0, 0.728419, -10.553, 0, 14.9401)
+
+[connection signal="request_completed" from="HTTPRequest" to="HTTPRequest" method="_on_request_completed"]
+[connection signal="request_completed" from="HTTPRequest/ImageDownload" to="HTTPRequest/ImageDownload" method="_on_request_completed"]

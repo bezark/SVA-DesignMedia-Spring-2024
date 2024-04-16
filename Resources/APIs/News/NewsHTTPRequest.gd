@@ -7,7 +7,7 @@ func topic_search(topic, date):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	topic_search("Obama", "2024-04-01")
+	topic_search("Sting Cheese", "2024-04-01")
 	
 
 

@@ -16,6 +16,4 @@ func _on_request_completed(result, response_code, headers, body):
 	var texture = ImageTexture.create_from_image(image)
 
 	# Display the image in a TextureRect node.
-	var texture_rect = TextureRect.new()
-	add_child(texture_rect)
-	texture_rect.texture = texture
+	$Sprite3D.texture = texture

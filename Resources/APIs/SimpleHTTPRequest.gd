@@ -12,9 +12,9 @@ func _process(delta):
 
 
 func _on_request_completed(result, response_code, headers, body):
-	print(result)
-	print(response_code)
-	print(headers)
-	print(body)
-	#var html = body.get_string_from_utf8()
-	#print(html)
+	#print(result)
+	#print(response_code)
+	#print(headers)
+	
+	var html = body.get_string_from_utf8()
+	print(html)
