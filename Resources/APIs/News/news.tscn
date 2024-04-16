@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cayl718pyjyos"]
+
+[ext_resource type="Script" path="res://News/NewsHTTPRequest.gd" id="1_0pbng"]
+
+[node name="News" type="Node3D"]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource("1_0pbng")
+
+[connection signal="request_completed" from="HTTPRequest" to="HTTPRequest" method="_on_request_completed"]

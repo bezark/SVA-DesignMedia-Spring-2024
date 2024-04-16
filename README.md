@@ -1,8 +1,8 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
-- [VIDEOS](https://youtu.be/vvv_jSedeww)
-- [ ] In class share next week
+- [VIDEOS](https://www.youtube.com/@johnbezark2730/videos)
+
 - **FIX CAPSTONE GRADING**
 - [itch.io](https://itch.io)
 - **Project Assignment:** [Capstone Project](Assignments/Capstone_Project.md)

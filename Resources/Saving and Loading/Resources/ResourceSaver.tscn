@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxx4lnwxelcpa"]
+
+[ext_resource type="Script" path="res://Resources/ResourceSaver.gd" id="1_g0ih1"]
+[ext_resource type="Script" path="res://Resources/CharacterBody2D.gd" id="2_3a00c"]
+[ext_resource type="Texture2D" uid="uid://3uyocks5hnh8" path="res://icon.svg" id="3_kcsbu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghvrk"]
+size = Vector2(128, 134)
+
+[node name="ResourceSaving" type="Node2D"]
+script = ExtResource("1_g0ih1")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_3a00c")
+
+[node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("3_kcsbu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ghvrk")

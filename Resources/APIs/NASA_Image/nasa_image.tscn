@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1sp0xsaey5k2"]
+
+[ext_resource type="Script" path="res://NASA_Image/NasaHTTPRequest.gd" id="1_waocn"]
+[ext_resource type="Script" path="res://NASA_Image/ImageDownload.gd" id="2_ugjsf"]
+
+[node name="Nasa Image" type="Node2D"]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource("1_waocn")
+
+[node name="ImageDownload" type="HTTPRequest" parent="HTTPRequest"]
+script = ExtResource("2_ugjsf")
+
+[connection signal="request_completed" from="HTTPRequest" to="HTTPRequest" method="_on_request_completed"]
+[connection signal="request_completed" from="HTTPRequest/ImageDownload" to="HTTPRequest/ImageDownload" method="_on_request_completed"]
