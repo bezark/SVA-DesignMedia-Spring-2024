@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlrbalniahdg5"]
+
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="1_x0un1"]
+
+[node name="MAIN" type="Node3D"]
+
+[node name="StartXR" parent="." instance=ExtResource("1_x0un1")]
+enable_passthrough = true
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Left" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, -0.5)
+tracker = &"left_hand"
+
+[node name="CSGBox3D" type="CSGBox3D" parent="XROrigin3D/Left"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[node name="Right" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="XROrigin3D/Right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, -0.5)
+size = Vector3(0.1, 0.1, 0.1)
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.354774, -10.7916)
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55932, 0.354774, -10.7916)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55932, 0.354774, -0.536249)
+radius = 0.877446
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3373, 2.16057, -0.536249)
+radius = 0.877446
+height = 8.70403
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0049, 0.354774, -10.7301)
+radius = 0.877446
+height = 8.70403
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0049, 3.40503, -22.9631)
+radius = 0.877446
+height = 8.70403
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+size = Vector3(100, 1, 100)

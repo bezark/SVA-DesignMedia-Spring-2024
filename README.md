@@ -1,6 +1,7 @@
 # SVA-DesignMedia-Spring-2024
 
 ## Top of Mind
+
 - [Capstone Check-In Exercise](https://docs.google.com/presentation/d/1Iv4bi61YCCIdNVx9zyflELZS9SIMXKuXlk4n5JFyq2Y/edit?usp=drivesdk)
 - [VIDEOS](https://www.youtube.com/@johnbezark2730/videos)
 - [itch.io](https://itch.io)
@@ -33,7 +34,6 @@ This course is broken up into 3 major parts. The sections are:
 - Patterns
 - Visions
 
-
 ## Part 1: Foundations
 
 ### *Class 1 1/16: Introduction to XR*
@@ -46,7 +46,7 @@ This course is broken up into 3 major parts. The sections are:
 
 ### **__NO CLASS 1/23__**
 
-- **DUE:**
+- **DUE:** 
   - **Reflection 1 What does XR mean to you?**
   - **Watch and respond to Ready Player 1**
 - **Homework**: Watch Introduction to Godot Recording and complete [Lab 1](Assignments/Labs/Lab_1.md)
@@ -61,39 +61,39 @@ This course is broken up into 3 major parts. The sections are:
 - **Homework: [Reflection 2- First Person View](Assignments/Reflections/Reflection2_FirstPersonView.md)**
 
 #### *Class 3 2/6: Git, Conditionals and Code*
- [Class Notes](Sessions/Class_3)
+
+[Class Notes](Sessions/Class_3)
+
 - **Workshop:** Git, Conditionals, Input, Signals, and Nodes
 - **DUE: Reflection 2**
 - **Homework: [Lab 2](Assignments/Labs/Lab_2.md)**
 
-
 #### *Class 4 2/13: SNOW DAY!*
+
 - **DUE: Lab 2**
 - **Homework: [Reflection 3](Assignments/Reflections/Reflection3_DefineMetaverse.md)**
-- Start Exploring [Christopher Alexander](Resources/Christopher_Alexander/README.md)
-[Class Notes](Sessions/Class_4)
-
-
+- Start Exploring [Christopher Alexander](Resources/Christopher_Alexander/README.md) [Class Notes](Sessions/Class_4)
 
 ## Part 2: Patterns
 
 In this section, lectures and workshops focus on understanding and implementing foundational design patterns found in spatial computing.
 
 #### *Class 5 2/20: Pattern Languages and Catching Up*
+
 [Class Notes](Sessions/Class_5/README.md)
+
 - **Theme:** Storytelling and narrative techniques in XR.
 - **DUE: Reflection 3**
 - **PROJECT ASSIGNMENT:** [Pattern Exploration and Pattern Language](Assignments/Pattern_Language_Project.md)
 - **Homework: [Lab 3](/Assignments/Labs/Lab_3.md)**
 
-
 #### *Class 6 2/27: Immersion & Environment/Narrative and Storytelling in XR*
+
 [Class Notes](Sessions/Class_6/README.md)
+
 - Project Check-in
 - **Lecture:** [Crafting compelling narratives in XR spaces](https://docs.google.com/presentation/d/15XQs10hoVlaxUGuo6hONBR-1INw4MEl3HPVcGNDrHhw/edit?usp=sharing)
 - **Workshop:** Implementing storytelling elements in Godot 4 projects and Designing immersive environments with Godot 4.
-
-
 
 **SPRING BREAK**
 
@@ -113,42 +113,42 @@ In this section, lectures and workshops focus on understanding and implementing 
 
 #### *Class 9 3/26: Working Time*
 
-
 ## Part 3: Visions
 
 #### *Class 10 4/2: Looking Backwards and Forwards*
+
 - Reviewing Pattern Language 3:20-4:00
 - **Project Assignment:** [Capstone Project](Assignments/Capstone_Project.md) 4:00 -4:10
 - [Futures Thinking Workshop](Sessions/Futures_Workshop.md) 4:10-6:10
 
 #### *Class 10 4/9: Extension and Context*
+
 - Coding Refresher
 - Exporting and WebXR
 - Terrains and Environments with plugins
 
 #### *Class 10 4/16:*
- - Project Development Discussion
-   - Prep time: 20 Minutes
-   - "I like...", "I wish...", and "What If..."
- - [Saving and Loading](Resources/SavingAndLoading)
- - [APIs](Resources/APIs)
+
+- Project Development Discussion 
+  - Prep time: 20 Minutes
+  - "I like...", "I wish...", and "What If..."
+- [Saving and Loading](Resources/SavingAndLoading)
+- [APIs](Resources/APIs)
 
 #### *Class 10 4/23:*
 
-
 #### *Class 10 4/30:*
+
 - Capstone Project Presentations
-
-
 
 # **Assessment**
 
 - **Class Participation:** 15%
-- **Reflections:** 12%
+- **Reflections:** 12% 
   - 3 Short Reflections on prompts. Each one is worth 4%.
-- **Labs:** 12%
+- **Labs:** 12% 
   - 3 coding assignments intended to build skills, each worth 4%.
-- **Pattern Exploration:** 20%
+- **Pattern Exploration:** 20% 
   - Mid-semester project. A prototype that explores an XR design pattern in depth.
 - **Vision Presentation:** 16%
 - **Capstone Project:** 25%
@@ -172,13 +172,13 @@ In this section, lectures and workshops focus on understanding and implementing 
 ### Godot Videos
 
 - [Gwizz](https://www.youtube.com/@Gwizz1027)
-- [Lukky](https://www.youtube.com/@lukky)
+- [Lukky](https://www.youtube.com/@lukky) 
   - [All 219 Nodes](https://www.youtube.com/watch?v=tO2gthp45MA)
 - [Godotneers](https://www.youtube.com/@godotneers)
 
 #### Godot XR
 
-- [Malcom Nixon](https://www.youtube.com/@MalcolmANixon)
+- [Malcom Nixon](https://www.youtube.com/@MalcolmANixon) 
   - [Godot VR Getting Started](https://www.youtube.com/watch?v=VrpySdMcdyw)
   - [World Grab Movement](https://www.youtube.com/watch?v=dFx2CA6aDBk)
   - [Pickable Grab Points](https://www.youtube.com/watch?v=46Mp8PxcNXs)
@@ -202,4 +202,5 @@ When not creating weird things, John also really likes to work in education and 
 [Portfolio](https://johnbezark.info/)
 
 ### Office Hours
+
 Thursday Mornings 10-12:30pm room 215 or by appointment.
