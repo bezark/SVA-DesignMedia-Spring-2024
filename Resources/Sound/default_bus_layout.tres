@@ -1,0 +1,16 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://dy2flc5bl0sp6"]
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_6fnp1"]
+resource_name = "Chorus"
+
+[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_do3dl"]
+resource_name = "Distortion"
+pre_gain = 18.67
+drive = 0.28
+
+[resource]
+bus/0/volume_db = 1.45823
+bus/0/effect/0/effect = SubResource("AudioEffectChorus_6fnp1")
+bus/0/effect/0/enabled = true
+bus/0/effect/1/effect = SubResource("AudioEffectDistortion_do3dl")
+bus/0/effect/1/enabled = true

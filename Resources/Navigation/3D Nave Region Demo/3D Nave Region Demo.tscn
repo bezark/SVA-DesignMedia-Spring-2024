@@ -41,10 +41,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35065, 1.38556, 5.48338)
 use_collision = true
 
 [node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18894, 0.851949, 6.83323)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13724, 0.851949, 7.45521)
 
 [node name="Agent" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.593762, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.41463, 0.593763, -0.883901)
 script = ExtResource("1_u335o")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="Agent"]

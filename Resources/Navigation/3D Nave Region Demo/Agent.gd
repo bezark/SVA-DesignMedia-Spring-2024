@@ -8,12 +8,12 @@ var arrived = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	navigation_agent.target_position = marker_3d.position
-	
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	navigation_agent.target_position = $"../CharacterBody3D".position
 	var current_agent_position: Vector3 = global_position
 	if not arrived:
 		var next_path_position: Vector3 = navigation_agent.get_next_path_position()

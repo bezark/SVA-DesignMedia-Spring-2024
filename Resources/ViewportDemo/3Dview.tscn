@@ -14,8 +14,8 @@ background_mode = 2
 sky = SubResource("Sky_smjl8")
 tonemap_mode = 2
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_63xam"]
-viewport_path = NodePath("SubViewport")
+[sub_resource type="ViewportTexture" id="ViewportTexture_bxyhw"]
+viewport_path = NodePath("Camera3D/SubViewportContainer/SubViewport")
 
 [node name="Node3D" type="Node3D"]
 
@@ -26,14 +26,20 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_6t6ke")
 
-[node name="SubViewport" type="SubViewport" parent="."]
-transparent_bg = true
-
-[node name="Node2D" parent="SubViewport" instance=ExtResource("1_f0ji8")]
-
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.0553684, 0, -0.998466, 0, 1, 0, 0.998466, 0, 0.0553684, 0, 0, 0)
 
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Camera3D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="Camera3D/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Node2D" parent="Camera3D/SubViewportContainer/SubViewport" instance=ExtResource("1_f0ji8")]
+
 [node name="Sprite3D" type="Sprite3D" parent="Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
-texture = SubResource("ViewportTexture_63xam")
+transform = Transform3D(0.646217, 0, 0.763154, 0, 1, 0, -0.763154, 0, 0.646217, 0.532229, -0.789059, -13.5978)
+texture = SubResource("ViewportTexture_bxyhw")

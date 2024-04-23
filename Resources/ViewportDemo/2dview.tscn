@@ -5,5 +5,17 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(132, 109)
+position = Vector2(118, 81)
 texture = ExtResource("1_nw3c8")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "TEXT"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 235.0
+offset_top = 152.0
+offset_right = 330.0
+offset_bottom = 205.0
+text = "Press	"
