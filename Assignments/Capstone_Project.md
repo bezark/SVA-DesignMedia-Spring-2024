@@ -35,12 +35,12 @@ Choosing this option will allow you to revise and expand an existing assignment 
 - **Technical Improvement (5 points):** Improvements in code quality, performance, and user experience. Resolution of any previous bugs or issues.
 - **Polish and Immersion (5 points):** Overall polish of the project, effectiveness in creating an engaging and immersive XR environment, and quality of visuals and audio elements.
 
-#### Written Documentation (10 points)
+#### Written Documentation (15 points)
 - 750 Words
-- **Project Evolution (5 points):** Comprehensive discussion of enhancements, technical improvements, and the rationale behind them. Insight into the iterative design and development process.
-- **Reflective Analysis (5 points):** Depth of reflection on the journey of revising and expanding the project, including challenges faced, learning outcomes, and the impact of changes on the user experience.
+- **Project Evolution (7 points):** Comprehensive discussion of enhancements, technical improvements, and the rationale behind them. Insight into the iterative design and development process.
+- **Reflective Analysis (8 points):** Depth of reflection on the journey of revising and expanding the project, including challenges faced, learning outcomes, and the impact of changes on the user experience.
 
-#### Deployment to Headset (Up to 5 points)
+#### Deployment to Headset (Up to 5 Bonus points)
 - **Successful Deployment (5 points):** Demonstrating functionality and improvements on an XR headset.
 
 ---
@@ -53,8 +53,8 @@ Choosing this option will allow you to revise and expand an existing assignment 
 
 #### Written Documentation (10 points)
 - 750 Words
-- **Concept and Design Process (5 points):** Clear presentation of the speculative concept, including world-building elements and the design process. Insight into creative choices and technological implementations.
-- **Critical Analysis (5 points):** Analysis of the speculative future's implications, reflections on potential societal impacts, and considerations of ethical dimensions. Organization and professional presentation of documentation.
+- **Concept and Design Process (7 points):** Clear presentation of the speculative concept, including world-building elements and the design process. Insight into creative choices and technological implementations.
+- **Critical Analysis (8 points):** Analysis of the speculative future's implications, reflections on potential societal impacts, and considerations of ethical dimensions. Organization and professional presentation of documentation.
 
-#### Deployment to Headset (Up to 5 points)
+#### Deployment to Headset (Up to 5 Bonus points)
 - **Successful Deployment (5 points):** Successful deployment of the speculative world to an XR headset, showcasing functionality and user experience.
